@@ -1,9 +1,7 @@
-
-/* Great Vubes Font-Family*/
-
+/* Great Vibes Font-Family */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-/* Nunito Font-Family*/
 
+/* Nunito Font-Family */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
@@ -14,24 +12,68 @@
 
 body {
   line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
 }
 
-p{
-    font-weight: 500;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
+p {
+  font-weight: 500;
+  font-size: 15px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: 600;
-  font-family: 'Nunito', sans-serif;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+header {
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 56px;
+  margin: 20px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .image {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+
+}
+
+li.nav-item a {
+  display: block;
+  padding: 5px 29px;
+  list-style: none;
+  transition: all 0.3s ease;
+  border-radius: 44px;
+  margin: 0 5px;
+  font-family: nunito, sans-serif;
+  font-weight: bold;
+}
+
+header ul li.nav-item a:hover {
+  background-color: #ffd72f;
+}
+
+header .icons a {
+  font-size: 20px;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
