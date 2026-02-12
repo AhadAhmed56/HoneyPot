@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -14,31 +15,34 @@
 </head>
 
 <body>
+
     <!-- header -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class=" text-dark" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" text-dark " href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" text-dark" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" text-dark" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" text-dark" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" text-dark" href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
+                    <div class="navBar">
+                        <ul>
+                            <li class="nav-item ">
+                                <a class=" text-dark active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" text-dark " href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" text-dark" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" text-dark" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" text-dark" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" text-dark" href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex justify-content-end align-items-center mt-3 mt-lg-0">
@@ -46,10 +50,10 @@
                             <a href="#" class=" text-dark me-3"><i class="fas fa-search"></i></a>
                         </div>
                         <div class="icons">
-                            <a href="#" class=" text-dark me-3"><i class="fas fa-shopping-cart"></i></a>    
+                            <a href="#" class=" text-dark me-3"><i class="fas fa-user"></i></a>
                         </div>
                         <div class="icons">
-                        <a href="#" class=" text-dark"><i class="fas fa-lock"></i></a>
+                            <a href="#" class=" text-dark"><i class="fas fa-lock"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,15 +62,140 @@
 
     </header>
     <!-- end-header -->
+    <section class="Banner-sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper Content-img">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide position-relative">
+                                <img src="/assets/images/main-banner-1.png" alt="" class="img-fluid w-100 slide-img">
+                                <!-- Text overlay -->
+                                <div class="slide-content">
+                                    <h4 class="slide-fade">Best of spicy taste</h4>
+                                    <h3 class="slide-fade">
+                                        Healthy Purified<br>Sweet Honey
+                                    </h3>
+                                    <a href="#" class="btn btn-dark mt-3 slide-fade">
+                                        SHOP NOW
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide position-relative">
+                                <img src="/assets/images/main-banner-2.png" alt="" class="img-fluid w-100 slide-img">
+                                <!-- Text overlay -->
+                                <div class="slide-content">
+                                    <h4 class="slide-fade">Best of spicy taste</h4>
+                                    <h3 class="slide-fade ">
+                                        Lemon Creamed<br>Honey Stash
+                                    </h3>
+                                    <a href="#" class="btn btn-dark mt-3 slide-fade">
+                                        SHOP NOW
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- Pagination bullets -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   
+                    <h4 class="text-center">Best Feature</h4>
+                    <h2 class="text-center">We Provide The Best Quality</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-lg-3">
+                         <img src="farming-garden-indoor-svgrepo-com.svg" class="svg-img" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Organics Honey</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="/assets/images/honey-svgrepo-com.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Forest Honey</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="/assets/images/honey-4-svgrepo-com.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Farming Honey</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Farming Honey</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Swiper JS init -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+
+    </script>
 </body>
 
 </html>
