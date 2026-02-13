@@ -33,7 +33,6 @@ img {
   height: auto;
   display: block;
 }
-
 header {
   position: absolute;
   top: 0;
@@ -43,56 +42,39 @@ header {
   background: white;
   margin: 128px 88px;
   border-radius: 40px;
-  padding: 24px 29px;
+  padding: 20px 30px;
 }
 
-.main-wrapper {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-header .image {
-  height: 100px;
-  width: 100px;
-  text-align: center;
-}
-
-header nav ul {
+/* NAV */
+.navBar ul {
   display: flex;
-  gap: 30px;
-
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
 }
 
-header .navBar ul li {
+/* NAV ITEMS */
+.navBar ul li {
   list-style: none;
 }
 
-li.nav-item a {
-  display: block;
-  padding: 5px 29px;
-  list-style: none;
-  transition: all 0.3s ease;
-  border-radius: 44px;
-  margin: 0 5px;
-  font-family: nunito, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
+.navBar ul li a {
+  padding: 8px 22px;
+  border-radius: 40px;
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
-header ul li.nav-item a:hover {
+.navBar ul li a:hover,
+.navBar ul li a.active {
   background-color: #ffd72f;
 }
 
-header ul li a.active {
-  background-color: #ffd72f;
-}
-
-header .icons a {
+/* ICONS */
+.icons a {
   font-size: 20px;
-  display: block;
-  padding: 0;
-  margin: 0;
+  margin-left: 18px;
+  color: #000;
 }
 
 /* banner */
@@ -253,3 +235,53 @@ header .image {
   font-weight: 500;
   color: rgb(102, 102, 102);
 }
+
+/* Feature cards (money-card) styling to match screenshot */
+.money-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  padding: 24px 10px 9px 0px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: 0 6px 18px rgba(17,17,17,0.04);
+}
+
+.money-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(17,17,17,0.08);
+}
+
+.money-card .svg-img{
+  width: 92px;
+  height: 92px;
+  margin: 6px auto 18px auto;
+  display: block;
+  /* padding: 12px; */
+  background: linear-gradient(180deg,#fff 0%, #fff 60%);
+  border-radius: 50%;
+}
+.card-sec .card-body h5{
+  margin-top: 6px;
+}
+
+.cards{
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding: 18px 6px;
+  flex-wrap: nowrap;
+}
+.cards::-webkit-scrollbar{
+  height: 6px;
+   background: rgba(0,0,0,0.12);
+  border-radius: 6px;
+}
+.cards::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.20);
+  border-radius: 6px;
+}
+
