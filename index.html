@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>HoneyPot</title>
 </head>
@@ -17,36 +18,36 @@
 <body>
 
     <!-- header -->
-  <header>
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- NAV -->
-      <div class="col-lg-8">
-        <nav class="navBar">
-          <ul class="mb-0">
-            <li class="nav-item"><a class="active" href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Shop</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-            <li class="nav-item"><a href="#">FAQ</a></li>
-            <li class="nav-item"><a href="#">Privacy Policy</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
 
-      <!-- ICONS -->
-      <div class="col-lg-4 d-flex justify-content-end">
-        <div class="icons d-flex align-items-center">
-          <a href="#"><i class="fas fa-search"></i></a>
-          <a href="#"><i class="fas fa-user"></i></a>
-          <a href="#"><i class="fas fa-lock"></i></a>
+                <!-- NAV -->
+                <div class="col-lg-8">
+                    <nav class="navBar">
+                        <ul class="mb-0">
+                            <li class="nav-item"><a class="active" href="#">Home</a></li>
+                            <li class="nav-item"><a href="#">Shop</a></li>
+                            <li class="nav-item"><a href="#">About</a></li>
+                            <li class="nav-item"><a href="#">Contact</a></li>
+                            <li class="nav-item"><a href="#">FAQ</a></li>
+                            <li class="nav-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- ICONS -->
+                <div class="col-lg-4 d-flex justify-content-end">
+                    <div class="icons d-flex align-items-center">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="#"><i class="fas fa-lock"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</header>
+    </header>
 
     <!-- end-header -->
     <section class="Banner-sec">
@@ -58,7 +59,7 @@
                         <div class="swiper-wrapper">
                             <!-- Slide 1 -->
                             <div class="swiper-slide position-relative ">
-                                <img src="/assets/images/main-banner-1.png" alt="banner-image" >
+                                <img src="/assets/images/main-banner-1.png" alt="banner-image">
                                 <!-- Text overlay -->
                                 <div class="slide-content">
                                     <h4 class="slide-fade">Best of spicy taste</h4>
@@ -72,7 +73,7 @@
                             </div>
                             <!-- Slide 2 -->
                             <div class="swiper-slide position-relative">
-                                <img src="/assets/images/main-banner-2.png" alt="banner-image" >
+                                <img src="/assets/images/main-banner-2.png" alt="banner-image">
                                 <!-- Text overlay -->
                                 <div class="slide-content">
                                     <h4 class="slide-fade">Best of spicy taste</h4>
@@ -97,62 +98,797 @@
             </div>
         </div>
     </section>
+    <!-- card-sec-start -->
     <section class="card-sec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                   
+
                     <h4 class="text-center">Best Feature</h4>
                     <h2 class="text-center">We Provide The Best Quality</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="row row-cols-1 row-cols-md-3 g-4 cards">
-                    <div class="col-lg-4">
-                        <div class="card h-100 money-card">
-                             <img src="/assets/images/farming-garden-indoor-svgrepo-com.svg" class="svg-img" alt="">
+            <div class="row ">
+                <div class=" cards">
+                    <div class=" money-card">
+                        <div class="image">
+                            <img src="/assets/images/farming-garden-indoor-svgrepo-com.svg" class="svg-img"
+                                alt="Organic Farming">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Organics Honey</h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
                         </div>
+                    </div>
+                    <div class="  money-card">
+                        <div class="image">
+                            <img src="/assets/images/honey-svgrepo-com.svg" class="svg-img" alt="Forest Honey">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Forest Honey</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card h-100 money-card">
-                            <img src="/assets/images/honey-svgrepo-com.svg" class="svg-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Forest Honey</h5>
-                                <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
-                            </div>
+                    <div class="  money-card">
+                        <div class="image">
+                            <img src="/assets/images/honey-4-svgrepo-com.svg" class="svg-img" alt="Farming Honey">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Farming Honey</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text the printin industry...</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card h-100 money-card">
-                            <img src="/assets/images/honey-4-svgrepo-com.svg" class="svg-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Farming Honey</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
+                    <div class="money-card">
+                        <div class="image">
+                            <img src="/assets/images/honey-svgrepo-com.svg" class="svg-img" alt="Forest Honey">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Forest Honey</h5>
+                            <p class="card-text">Lorem Ipsum is simply dummy text the printin industry..</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card h-100 money-card">
-                            <img src="/assets/images/honey-svgrepo-com.svg" class="svg-img" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Farming Honey</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-
                 </div>
             </div>
         </div>
     </section>
+    <!-- card-sec-end -->
+    <!-- sales-sec-start -->
+    <section class="sales">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cotent-image">
+                        <div class="image">
+                            <a href="javascripts:void(0)">
+                                <img src="/assets/images/sub-banner-1.jpg" alt="sales-image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h4>100% natural</h4>
+                            <h3>
+                                Best summner Sale <br>
+                                50% OFF
+                            </h3>
+                            <a href="#" class="btn btn-dark mt-3">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cotent-image">
+                        <div class="image">
+                            <a href="javascripts:void(0)">
+                                <img src="/assets/images/sub-banner-2.jpg" alt="sales-image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h4>Delight taste</h4>
+                            <h3>
+                                100% Natural Bee<br>Honeycomb
+                            </h3>
+                            <a href="#" class="btn btn-dark mt-3">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sales-sec-end -->
+    <!-- product-sec-start -->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <div class="content">
+                        <h4 class="text-center">New Arrivals</h4>
+                        <h2 class="text-center">Latest Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row responsives">
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/05-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/02-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/05-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/01-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/04-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/04-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/03-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/03-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-sec-end -->
+
+    <!-- our-product-start -->
+    <section class="our-porduct">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content">
+                        <h4 class="text-center">Why Choose Us</h4>
+                        <h2 class="text-center">Why Choose Our Products</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="our-product-content our-product-content-1">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 310.09 279.96">
+                                    <path
+                                        d="M211.75,195.72c-2.17,10.51-3.79,20.74-6.44,30.69-3.82,14.38-10,27.71-20.23,38.84-6.84,7.46-14.88,12.91-25.2,14.35-11.6,1.62-21.42-2.39-30-9.84-11.79-10.25-19-23.58-23.27-38.23-3.18-10.84-4.75-22.16-7-33.26-.16-.8-.28-1.6-.58-3.33-1.59,2.65-2.71,4.54-3.86,6.42-11.24,18.44-31.8,28.16-52,24.58C21.37,222.09,5.48,206.67,1,185a50.49,50.49,0,0,1,30.27-56.43c22.07-9,44.39-17.38,66.6-26,1.61-.63,3.22-1.28,5-2-7.45-26.14-.63-47.6,21.45-65-2.94-3.71-5.34-8.18-9-11-6.08-4.67-13-8.24-19.5-12.37-1.73-1.1-4-2.3-4.59-4s-.23-4.81,1-6S96.79-.13,98.49.53c14.55,5.57,27.18,13.74,35,27.88.36.64.77,1.26,1.22,2a56,56,0,0,1,40.72-.12c2.38-3.43,4.47-7,7.07-10.1C190.17,10.94,200.25,5,211.26.54a5.94,5.94,0,0,1,8.1,3.21c1.24,3.15-.24,6.08-3.71,7.94-5.6,3-11.35,5.81-16.62,9.31a32.8,32.8,0,0,0-12.45,15c21.28,16.69,28.35,38.21,20.82,64.6l36,14c11.28,4.39,22.58,8.75,33.83,13.21,22.7,9,35.17,30,32.51,54.56C307.38,204,289.57,222.18,266.9,226c-19.47,3.28-39.85-5.93-50.7-22.94C214.67,200.66,213.24,198.19,211.75,195.72ZM169,98.57l13.2,22.65c14.3,24.47,28.53,49,42.91,73.42,9.49,16.13,27.25,23.34,44.65,18.39,16.31-4.64,27.5-18.83,28.44-36.07.88-16-9.11-31.58-24.58-37.7-21.24-8.4-42.56-16.57-63.84-24.84ZM141,98.78c-7.55,2.91-14.38,5.54-21.19,8.19-28.13,11-56.43,21.47-84.31,33-27.33,11.29-31.57,48.61-8,66.49,18.84,14.33,45.22,9.29,57.43-11.34,18.37-31,36.43-62.25,54.62-93.39C139.87,101,140.2,100.26,141,98.78Zm-26.2-2.86c1.22-.43,2.49-.85,3.74-1.33C129.3,90.4,140.14,86.27,150.91,82a10.34,10.34,0,0,1,8.27-.11c8.91,3.59,17.89,7,26.84,10.46,3.22,1.24,6.45,2.44,9.65,3.65,7-16.22.5-37.44-14.58-48.78a43.26,43.26,0,0,0-53.15,1C113.71,59.76,107.66,81.29,114.75,95.92Zm85.49,94.36H110.08c2.07,10.73,4,21,6.13,31.2a3.61,3.61,0,0,0,2.76,2.08q36.17.18,72.32,0a3.7,3.7,0,0,0,2.81-2C196.24,211.32,198.16,201.05,200.24,190.28Zm-89.8-12.68H200a28.84,28.84,0,0,0-1.67-4.94c-5-8.66-10.07-17.23-15-25.89a4.09,4.09,0,0,0-4.08-2.44c-16,.09-32,0-48,.15a5.57,5.57,0,0,0-4,2.24c-5.27,8.62-10.33,17.36-15.36,26.13C111.14,174.15,111,175.79,110.44,177.6Zm10.63,58.29c3.89,9.19,8.57,17.33,15.64,23.88,12,11.09,25.51,10.93,37.34-.39,6.23-6,10.58-13.22,14.12-21a17.48,17.48,0,0,0,.71-2.49Zm53.69-103.68c-6.68-11.42-13-22.22-19.62-33.51l-19.55,33.51Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h3>Honey Production</h3>
+                                <p>Lorem Ipsum is simply dummy <br> the printin industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="our-product-content our-product-content-2">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 310.09 279.96">
+                                    <path
+                                        d="M211.75,195.72c-2.17,10.51-3.79,20.74-6.44,30.69-3.82,14.38-10,27.71-20.23,38.84-6.84,7.46-14.88,12.91-25.2,14.35-11.6,1.62-21.42-2.39-30-9.84-11.79-10.25-19-23.58-23.27-38.23-3.18-10.84-4.75-22.16-7-33.26-.16-.8-.28-1.6-.58-3.33-1.59,2.65-2.71,4.54-3.86,6.42-11.24,18.44-31.8,28.16-52,24.58C21.37,222.09,5.48,206.67,1,185a50.49,50.49,0,0,1,30.27-56.43c22.07-9,44.39-17.38,66.6-26,1.61-.63,3.22-1.28,5-2-7.45-26.14-.63-47.6,21.45-65-2.94-3.71-5.34-8.18-9-11-6.08-4.67-13-8.24-19.5-12.37-1.73-1.1-4-2.3-4.59-4s-.23-4.81,1-6S96.79-.13,98.49.53c14.55,5.57,27.18,13.74,35,27.88.36.64.77,1.26,1.22,2a56,56,0,0,1,40.72-.12c2.38-3.43,4.47-7,7.07-10.1C190.17,10.94,200.25,5,211.26.54a5.94,5.94,0,0,1,8.1,3.21c1.24,3.15-.24,6.08-3.71,7.94-5.6,3-11.35,5.81-16.62,9.31a32.8,32.8,0,0,0-12.45,15c21.28,16.69,28.35,38.21,20.82,64.6l36,14c11.28,4.39,22.58,8.75,33.83,13.21,22.7,9,35.17,30,32.51,54.56C307.38,204,289.57,222.18,266.9,226c-19.47,3.28-39.85-5.93-50.7-22.94C214.67,200.66,213.24,198.19,211.75,195.72ZM169,98.57l13.2,22.65c14.3,24.47,28.53,49,42.91,73.42,9.49,16.13,27.25,23.34,44.65,18.39,16.31-4.64,27.5-18.83,28.44-36.07.88-16-9.11-31.58-24.58-37.7-21.24-8.4-42.56-16.57-63.84-24.84ZM141,98.78c-7.55,2.91-14.38,5.54-21.19,8.19-28.13,11-56.43,21.47-84.31,33-27.33,11.29-31.57,48.61-8,66.49,18.84,14.33,45.22,9.29,57.43-11.34,18.37-31,36.43-62.25,54.62-93.39C139.87,101,140.2,100.26,141,98.78Zm-26.2-2.86c1.22-.43,2.49-.85,3.74-1.33C129.3,90.4,140.14,86.27,150.91,82a10.34,10.34,0,0,1,8.27-.11c8.91,3.59,17.89,7,26.84,10.46,3.22,1.24,6.45,2.44,9.65,3.65,7-16.22.5-37.44-14.58-48.78a43.26,43.26,0,0,0-53.15,1C113.71,59.76,107.66,81.29,114.75,95.92Zm85.49,94.36H110.08c2.07,10.73,4,21,6.13,31.2a3.61,3.61,0,0,0,2.76,2.08q36.17.18,72.32,0a3.7,3.7,0,0,0,2.81-2C196.24,211.32,198.16,201.05,200.24,190.28Zm-89.8-12.68H200a28.84,28.84,0,0,0-1.67-4.94c-5-8.66-10.07-17.23-15-25.89a4.09,4.09,0,0,0-4.08-2.44c-16,.09-32,0-48,.15a5.57,5.57,0,0,0-4,2.24c-5.27,8.62-10.33,17.36-15.36,26.13C111.14,174.15,111,175.79,110.44,177.6Zm10.63,58.29c3.89,9.19,8.57,17.33,15.64,23.88,12,11.09,25.51,10.93,37.34-.39,6.23-6,10.58-13.22,14.12-21a17.48,17.48,0,0,0,.71-2.49Zm53.69-103.68c-6.68-11.42-13-22.22-19.62-33.51l-19.55,33.51Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h3>Honey Production</h3>
+                                <p>Lorem Ipsum is simply dummy <br> the printin industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="our-product-content our-product-content-3">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 310.09 279.96">
+                                    <path
+                                        d="M211.75,195.72c-2.17,10.51-3.79,20.74-6.44,30.69-3.82,14.38-10,27.71-20.23,38.84-6.84,7.46-14.88,12.91-25.2,14.35-11.6,1.62-21.42-2.39-30-9.84-11.79-10.25-19-23.58-23.27-38.23-3.18-10.84-4.75-22.16-7-33.26-.16-.8-.28-1.6-.58-3.33-1.59,2.65-2.71,4.54-3.86,6.42-11.24,18.44-31.8,28.16-52,24.58C21.37,222.09,5.48,206.67,1,185a50.49,50.49,0,0,1,30.27-56.43c22.07-9,44.39-17.38,66.6-26,1.61-.63,3.22-1.28,5-2-7.45-26.14-.63-47.6,21.45-65-2.94-3.71-5.34-8.18-9-11-6.08-4.67-13-8.24-19.5-12.37-1.73-1.1-4-2.3-4.59-4s-.23-4.81,1-6S96.79-.13,98.49.53c14.55,5.57,27.18,13.74,35,27.88.36.64.77,1.26,1.22,2a56,56,0,0,1,40.72-.12c2.38-3.43,4.47-7,7.07-10.1C190.17,10.94,200.25,5,211.26.54a5.94,5.94,0,0,1,8.1,3.21c1.24,3.15-.24,6.08-3.71,7.94-5.6,3-11.35,5.81-16.62,9.31a32.8,32.8,0,0,0-12.45,15c21.28,16.69,28.35,38.21,20.82,64.6l36,14c11.28,4.39,22.58,8.75,33.83,13.21,22.7,9,35.17,30,32.51,54.56C307.38,204,289.57,222.18,266.9,226c-19.47,3.28-39.85-5.93-50.7-22.94C214.67,200.66,213.24,198.19,211.75,195.72ZM169,98.57l13.2,22.65c14.3,24.47,28.53,49,42.91,73.42,9.49,16.13,27.25,23.34,44.65,18.39,16.31-4.64,27.5-18.83,28.44-36.07.88-16-9.11-31.58-24.58-37.7-21.24-8.4-42.56-16.57-63.84-24.84ZM141,98.78c-7.55,2.91-14.38,5.54-21.19,8.19-28.13,11-56.43,21.47-84.31,33-27.33,11.29-31.57,48.61-8,66.49,18.84,14.33,45.22,9.29,57.43-11.34,18.37-31,36.43-62.25,54.62-93.39C139.87,101,140.2,100.26,141,98.78Zm-26.2-2.86c1.22-.43,2.49-.85,3.74-1.33C129.3,90.4,140.14,86.27,150.91,82a10.34,10.34,0,0,1,8.27-.11c8.91,3.59,17.89,7,26.84,10.46,3.22,1.24,6.45,2.44,9.65,3.65,7-16.22.5-37.44-14.58-48.78a43.26,43.26,0,0,0-53.15,1C113.71,59.76,107.66,81.29,114.75,95.92Zm85.49,94.36H110.08c2.07,10.73,4,21,6.13,31.2a3.61,3.61,0,0,0,2.76,2.08q36.17.18,72.32,0a3.7,3.7,0,0,0,2.81-2C196.24,211.32,198.16,201.05,200.24,190.28Zm-89.8-12.68H200a28.84,28.84,0,0,0-1.67-4.94c-5-8.66-10.07-17.23-15-25.89a4.09,4.09,0,0,0-4.08-2.44c-16,.09-32,0-48,.15a5.57,5.57,0,0,0-4,2.24c-5.27,8.62-10.33,17.36-15.36,26.13C111.14,174.15,111,175.79,110.44,177.6Zm10.63,58.29c3.89,9.19,8.57,17.33,15.64,23.88,12,11.09,25.51,10.93,37.34-.39,6.23-6,10.58-13.22,14.12-21a17.48,17.48,0,0,0,.71-2.49Zm53.69-103.68c-6.68-11.42-13-22.22-19.62-33.51l-19.55,33.51Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h3>Honey Production</h3>
+                                <p>Lorem Ipsum is simply dummy <br> the printin industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="our-product-content our-product-content-4">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
+                                    viewBox="0 0 310.09 279.96">
+                                    <path
+                                        d="M211.75,195.72c-2.17,10.51-3.79,20.74-6.44,30.69-3.82,14.38-10,27.71-20.23,38.84-6.84,7.46-14.88,12.91-25.2,14.35-11.6,1.62-21.42-2.39-30-9.84-11.79-10.25-19-23.58-23.27-38.23-3.18-10.84-4.75-22.16-7-33.26-.16-.8-.28-1.6-.58-3.33-1.59,2.65-2.71,4.54-3.86,6.42-11.24,18.44-31.8,28.16-52,24.58C21.37,222.09,5.48,206.67,1,185a50.49,50.49,0,0,1,30.27-56.43c22.07-9,44.39-17.38,66.6-26,1.61-.63,3.22-1.28,5-2-7.45-26.14-.63-47.6,21.45-65-2.94-3.71-5.34-8.18-9-11-6.08-4.67-13-8.24-19.5-12.37-1.73-1.1-4-2.3-4.59-4s-.23-4.81,1-6S96.79-.13,98.49.53c14.55,5.57,27.18,13.74,35,27.88.36.64.77,1.26,1.22,2a56,56,0,0,1,40.72-.12c2.38-3.43,4.47-7,7.07-10.1C190.17,10.94,200.25,5,211.26.54a5.94,5.94,0,0,1,8.1,3.21c1.24,3.15-.24,6.08-3.71,7.94-5.6,3-11.35,5.81-16.62,9.31a32.8,32.8,0,0,0-12.45,15c21.28,16.69,28.35,38.21,20.82,64.6l36,14c11.28,4.39,22.58,8.75,33.83,13.21,22.7,9,35.17,30,32.51,54.56C307.38,204,289.57,222.18,266.9,226c-19.47,3.28-39.85-5.93-50.7-22.94C214.67,200.66,213.24,198.19,211.75,195.72ZM169,98.57l13.2,22.65c14.3,24.47,28.53,49,42.91,73.42,9.49,16.13,27.25,23.34,44.65,18.39,16.31-4.64,27.5-18.83,28.44-36.07.88-16-9.11-31.58-24.58-37.7-21.24-8.4-42.56-16.57-63.84-24.84ZM141,98.78c-7.55,2.91-14.38,5.54-21.19,8.19-28.13,11-56.43,21.47-84.31,33-27.33,11.29-31.57,48.61-8,66.49,18.84,14.33,45.22,9.29,57.43-11.34,18.37-31,36.43-62.25,54.62-93.39C139.87,101,140.2,100.26,141,98.78Zm-26.2-2.86c1.22-.43,2.49-.85,3.74-1.33C129.3,90.4,140.14,86.27,150.91,82a10.34,10.34,0,0,1,8.27-.11c8.91,3.59,17.89,7,26.84,10.46,3.22,1.24,6.45,2.44,9.65,3.65,7-16.22.5-37.44-14.58-48.78a43.26,43.26,0,0,0-53.15,1C113.71,59.76,107.66,81.29,114.75,95.92Zm85.49,94.36H110.08c2.07,10.73,4,21,6.13,31.2a3.61,3.61,0,0,0,2.76,2.08q36.17.18,72.32,0a3.7,3.7,0,0,0,2.81-2C196.24,211.32,198.16,201.05,200.24,190.28Zm-89.8-12.68H200a28.84,28.84,0,0,0-1.67-4.94c-5-8.66-10.07-17.23-15-25.89a4.09,4.09,0,0,0-4.08-2.44c-16,.09-32,0-48,.15a5.57,5.57,0,0,0-4,2.24c-5.27,8.62-10.33,17.36-15.36,26.13C111.14,174.15,111,175.79,110.44,177.6Zm10.63,58.29c3.89,9.19,8.57,17.33,15.64,23.88,12,11.09,25.51,10.93,37.34-.39,6.23-6,10.58-13.22,14.12-21a17.48,17.48,0,0,0,.71-2.49Zm53.69-103.68c-6.68-11.42-13-22.22-19.62-33.51l-19.55,33.51Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="content">
+                                <h3>Honey Production</h3>
+                                <p>Lorem Ipsum is simply dummy <br> the printin industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- our-product-end -->
+    <!-- about-start -->
+    <section class="about">
+        <div class="container gx-0">
+            <div class="row gx-0">
+                <div class="col-lg-6 gx-0">
+                    <div class="image">
+                        <img src="/assets/images/about-img-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="content">
+                            <h4>About Us</h4>
+                            <h2>Natural Honey Is A Very Good Food For Health.</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                                industry's standard dummy text ever since the 1500s when an type and scrambled it to
+                                make a type specimen bo</p>
+                        </div>
+                        <div class="l-r-content">
+                            <div class="l-content">
+                                <h3>Best Organic Honey</h3>
+                                <p>There are many passages lorem Ipsum available.</p>
+                            </div>
+                            <div class="l-content">
+                                <h3>Organic Honey Shop</h3>
+                                <p>There are many passages lorem Ipsum available.</p>
+                            </div>
+                        </div>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-end -->
+    <!-- product-sec-start -->
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="content">
+                        <h4 class="text-center">New Arrivals</h4>
+                        <h2 class="text-center">Latest Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row responsives">
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/05-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/02-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/05-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/01-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/04-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/04-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/03-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                ADD TO CART
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-content">
+                        <div class="image">
+                            <img src="/assets/images/03-1-460x460.jpg" class="img-main">
+                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                        </div>
+
+                        <div class="content">
+                            <a href="#">
+                                <h4>A Glass Jar Of Honey With Dipper Resting On Top Surrounded</h4>
+                            </a>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <h5>$20</h5>
+                            <button class="btn">
+                                <i class="fas fa-cart-plus"></i>
+                                Select Options
+                            </button>
+                        </div>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-cart-plus"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-sec-end -->
+
+    <!-- Testimonials-sec-start -->
+    <section class="Testimonials">
+        <div class="container gx-0">
+            <div class="row">
+                <div class="content">
+                    <h4 class="text-center">Our Testimonials</h4>
+                    <h2 class="text-center">Our Client's Feedback</h2>
+                </div>
+            </div>
+            <div class="row res-testimonials">
+                <div class="col-lg-6">
+                    <div class="testimonials-card">
+                        <div class="image">
+                            <img src="/assets/images/author-1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>“Excellent product, A+ customer service.” </h3>
+                            <p> It is a long established fact To the treader will readable content of a to page when
+                                looking a its layout the point desktop publishing readable english.</p>
+                            <a href="#">Augusta Wind</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonials-card">
+                        <div class="image">
+                            <img src="/assets/images/author-2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>“Excellent product, A+ customer service.” </h3>
+                            <p> It is a long established fact To the treader will readable content of a to page when
+                                looking a its layout the point desktop publishing readable english.</p>
+                            <a href="#">Augusta Wind</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonials-card">
+                        <div class="image">
+                            <img src="/assets/images/author-3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>“Excellent product, A+ customer service.” </h3>
+                            <p> It is a long established fact To the treader will readable content of a to page when
+                                looking a its layout the point desktop publishing readable english.</p>
+                            <a href="#">Augusta Wind</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonials-card">
+                        <div class="image">
+                            <img src="/assets/images/author-4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>“Excellent product, A+ customer service.” </h3>
+                            <p> It is a long established fact To the treader will readable content of a to page when
+                                looking a its layout the point desktop publishing readable english.</p>
+                            <a href="#">Augusta Wind</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials-sec-end -->
+
+         <!--blog-start  -->
+         <section class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <h4 class="text-center">From The Blog</h4>
+                            <h2 class="text-center">Our Latest Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-content-img">
+                            <div class="image">
+                                <img src="/assets/images/blog-1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
+                                <h3> <a href="#">How to Write a Blog Post Your Readers Will Love in 5 Steps</a></h3>
+                                <p>Why the world would end without travel coupons. The 16 worst songs about spa deals.….</p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                         <div class="blog-content-img">
+                            <div class="image">
+                                <img src="/assets/images/blog-2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
+                                <h3> <a href="#">How to Write a Blog Post Your Readers Will Love in 5 Steps</a></h3>
+                                <p>Why the world would end without travel coupons. The 16 worst songs about spa deals.….</p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                         <div class="blog-content-img">
+                            <div class="image">
+                                <img src="/assets/images/blog-3.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
+                                <h3> <a href="#">How to Write a Blog Post Your Readers Will Love in 5 Steps</a></h3>
+                                <p>Why the world would end without travel coupons. The 16 worst songs about spa deals.….</p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!--blog-end  -->
 
 
 
@@ -163,6 +899,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Swiper JS init -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -184,6 +921,83 @@
         });
 
 
+        $('.responsives').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            dots: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+        $('.res-testimonials').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            dots: false,
+            slidesToShow: 2,
+            slidesToScroll: 4,
+            prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i></div>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
 
     </script>
 </body>
