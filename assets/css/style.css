@@ -527,7 +527,9 @@ section.product .content {
     color: #000;
 }
 
-.responsives,.res-testimonials:hover .slick-arrow {
+.responsives:hover .slick-arrow,
+.res-testimonials:hover .slick-arrow
+ {
     opacity: 1;
 }
 
@@ -744,3 +746,14 @@ section.blog {
     font-size: 18px;
     border-bottom: 1px solid #000;
   }
+  /* logos */
+  .logos-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos {
+    border-top: 1px solid black;
+    padding: 60px 0px;
+}
