@@ -58,7 +58,7 @@ img {
 
 .Banner-sec-about .breadcrumb-about {
     position: absolute;
-    top: 40%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -98,7 +98,7 @@ img {
 
 /* section padding */
 .tabsec {
-    padding: 50px;
+    padding: 50px 0px 0px 0px;
 }
 
 /* nav center */
@@ -148,7 +148,7 @@ section.tabsec nav {
 
 /* grid */
 section.grid-sec {
-    padding: 70px 0px;
+    padding: 75px 0px;
 }
 
 .grid-main {
