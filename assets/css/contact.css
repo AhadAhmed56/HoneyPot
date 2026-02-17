@@ -1,0 +1,73 @@
+/* map + form section */
+.contact-map {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+/* layout */
+.contact-map .row {
+    display: flex;
+    align-items: stretch;
+}
+
+/* map */
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 538px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* form */
+.contact-form {
+    background: #66666617;
+    padding: 40px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #000;
+}
+
+/* button */
+.contact-form button {
+    background: #ffd72f;
+    color: #fff;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+.contact-form button:hover {
+    background: #333;
+}
