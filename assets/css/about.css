@@ -50,71 +50,223 @@ img {
 }
 
 .Banner-sec-about {
-    background-image: url(/assets/images/about-breadcumb-bkg.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 400px;
-    position: relative;
+    background-image: url(/assets/images/about-breadcumb-bkg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .Banner-sec-about .breadcrumb-about {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.breadcrumb .breadcrumb-item a {
-    font-size: 15px;
+/* page title */
+.Banner-sec-about .breadcrumb-about h4 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito';
+    /* margin-bottom: 8px; */
+    color: #000;
+    /* margin: 58px 0px; */
+}
+
+/* breadcrumb clean */
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
     font-weight: 500;
     color: #000;
 }
 
-.breadcrumb {
-    padding: 45px 0px 0px 0px;
+.breadcrumb-item a {
+    color: #000;
 }
 
-nav.breadcrumb-about h4 {
-    font-size: 36px;
-    font-weight: 700;
-    font-family: 'Nunito';
-    margin: 0;
+.breadcrumb-item.active {
+    color: #555;
 }
 
-/* tab-sec */
+/* section padding */
 .tabsec {
     padding: 50px;
 }
 
-.tabsec button {
+/* nav center */
+section.tabsec nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* tab buttons */
+.tabsec .nav-tabs {
+    border-bottom: none;
+}
+
+.tabsec .nav-link {
     color: #666;
     font-size: 15px;
     font-weight: 700;
     padding: 13px 24px;
+    border-bottom: none;
+    border-radius: 0;
+    margin: 0 5px;
+    background: #fff;
 }
 
+/* active tab */
 .tabsec button.active {
     color: #ffd72f !important;
-
+    border-color: #ccc;
+    z-index: 2;
+    border: 1px solid #ccc;
 }
 
-section.tabsec nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tabsec .nav-link:hover {
+    color: #ffd72f;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin-top: -1px;
+    background: #fff;
 }
 
 .tab-pane {
-    padding: 20px;
-    border: 1px solid black;
+    line-height: 1.7;
 }
 
-section.tabsec nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* grid */
+section.grid-sec {
+    padding: 70px 0px;
 }
 
-.tab-Content .tap-pane {
-    padding: 20px;
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 275px);
+    gap: 30px;
+}
+
+.one {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.two {
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+
+.three {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.four {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.grid-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* accordion */
+section.accordion-sec {
+    background-color: #F2F2F2;
+    padding: 70px 0px;
+}
+
+section.accordion-sec .accordion-sec .tab-content .content h4 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.tab-contnet .content h4 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.tab-contnet .content p {
+    color: #666;
+    font-size: 15px;
+    margin: 30px 0px ;
+}
+button {
+    color: #000;
+}
+
+.accordion-button {
+    position: relative;
+}
+
+.accordion {
+    margin: 40px 0px;
+}
+
+.accordion .accordion-item {
+    border: none;
+    padding: 10px 0px ;
+    
+}
+
+.accordion .accordion-item h2 button {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #ffd72f;
+    background-color: transparent;
+    box-shadow: none;
+}
+ .accordion-button::after {
+        background-image: unset;
+        position: absolute;
+        content: '\f107';
+        font-family: "Font Awesome 6 Free";
+        right: auto;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e7deff;
+        border-radius: 50%;
+        color: #1e0761;
+        font-size: 14px;
+        font-weight: 900;
+        border: none;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        content: "\f146";
+    }
+     .accordion-button:focus {
+        box-shadow: none;
+    }
+    .accordion-body {
+    padding: 1.5rem 1.25rem 1.5rem 60px;
+    background-color: #F2F2F2;
+    transition: all 0.3s ease;
+    line-height: 1.6;
 }
