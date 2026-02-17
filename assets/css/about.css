@@ -270,3 +270,146 @@ button {
     transition: all 0.3s ease;
     line-height: 1.6;
 }
+
+.accrodin-sec .tab-contnet {
+    padding: 56px 0px  0px 0px;
+}
+
+/* simple card section */
+.simple-card {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.simple-card .card-group {
+  gap: 25px;
+}
+
+.simple-card .card {
+  border: none;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 12px;
+  background: #ffffff;
+  /* transition: all 0.4s ease; */
+}
+/* icon styling */
+.simple-card .icons{
+  width: 70px;
+  height: 70px;
+  margin: 0  auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.simple-card .icons i {
+  font-size: 50px;
+  color: #ffd72f;
+  transition: color 0.3s linear;
+}
+.simple-card .icons i:hover {
+  color: #000;
+  animation: bounceUpDown 0.7s ease-in-out 1;
+}
+
+/* keyframes */
+@keyframes bounceUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-12px); 
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(12px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* card content */
+.simple-card .card-title a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.simple-card .card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin-top: 10px;
+  font-weight: 500;
+}
+/* COUNTER */
+.counter-sec{
+    padding: 95px 0px;
+    background-image: url(/assets/images/about-parallax.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.counter h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.counter p {
+    font-size: 18px;
+    color: white;
+}
+
+.counter {
+    text-align: center;
+}
+/* .end-about */
+section.end-sec {
+    padding: 75px 0px;
+}
+
+.end-content {
+    text-align: center;
+}
+
+.end-content h3 {
+    font-size: 15px;
+    color: #666;
+}
+
+.end-content h4 {
+    font-size: 30px;
+    font-family: nunito;
+    font-weight: 700;
+    margin: 0;
+}
+
+.end-content p {
+    margin: 0 auto;
+    color: #666;
+    width: 100%;
+    padding: 30px 0px 45px 0px;
+}
+
+.end-content a {
+    padding: 14px 32px;
+    background-color: #ffd72f;
+    color: #000;
+    font-weight: 700;
+    border-radius: 29px;
+}
+.end-content a:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
