@@ -23,3 +23,7 @@ section.middle-sec {
     font-family: 'Nunito';
 
 }
+.middle-box h3 {
+    font-size: 43px;
+    font-weight: 700;
+}

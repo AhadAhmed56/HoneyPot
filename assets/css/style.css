@@ -70,6 +70,7 @@ header {
   align-items: center;
   gap: 18px;
 }
+
 .navBar ul li {
   list-style: none;
   display: inline-block;
@@ -139,7 +140,7 @@ header.scrolled {
   z-index: 2;
 }
 
-.slide-img {
+.swiper-slide img {
   transition: transform 4s ease;
 }
 
@@ -154,7 +155,7 @@ header.scrolled {
 }
 
 .swiper-slide-active .slide-fade {
-  opacity: 1;
+  opacity: .8;
   transform: translateZ(0);
 }
 
@@ -200,7 +201,7 @@ header.scrolled {
   margin-bottom: 40px;
 }
 
- .slide-content .btn {
+.slide-content .btn {
   border-radius: 50px;
   padding: 10px 25px;
   font-size: 15px;
@@ -853,302 +854,343 @@ section.blog {
 .form-sec button:hover {
   background: #ffd72f;
   color: #000;
-
+  border: 1px solid #000;
 }
 
 /* footer */
 
 footer {
-    padding: 70px 0;
+  padding: 70px 0;
 }
+
 .container {
-    width: 1370px;
-    margin: 0 auto;
+  width: 1370px;
+  margin: 0 auto;
 }
 
 .col-lg-3 {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
+
 .col-lg-4 {
-    float: left;
-    width: 33.33%;
+  float: left;
+  width: 33.33%;
 }
+
 .col-lg-2 {
-    float: left;
-    width: 16.66%;
+  float: left;
+  width: 16.66%;
 }
+
 .row {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .fo-2 .footer-logo img {
-    width: 161px;
+  width: 161px;
 }
+
 .footer-icons ul li {
-    float: left;
-    list-style: none;
-    margin: 0 4px;
+  float: left;
+  list-style: none;
+  margin: 0 4px;
 }
+
 .footer-icons ul li a {
-    color: white;
-    font-size: 17px;
-    background: #202020;
-    PADDING: 13PX 12PX;
-    DISPLAY: inline-block;
-    line-height: 13px;
-    border-radius: 50%;
+  color: white;
+  font-size: 17px;
+  background: #202020;
+  PADDING: 13PX 12PX;
+  DISPLAY: inline-block;
+  line-height: 13px;
+  border-radius: 50%;
 }
+
 .footer-icons ul {
-    overflow: hidden;
-    margin-top: 24px;
+  overflow: hidden;
+  margin-top: 24px;
 }
+
 .fo-2 p {
-    line-height: 1.6;
-    text-align: justify;
-    margin-top: 31px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 31px;
 }
+
 .fo-2 {
-    padding-right: 80px;
+  padding-right: 80px;
 }
+
 .footer-links ul li {
-    list-style: none;
-    margin: 6px 0px 0px 0px;
+  list-style: none;
+  margin: 6px 0px 0px 0px;
 }
+
 .footer-links ul {
-    margin-top: 33px;
+  margin-top: 33px;
 }
+
 .footer-links ul li a {
-    color: #54595f;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
+  color: #54595f;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
 }
+
 .footer-links h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contact h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contact .contact-link {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 
 
 .contact-link h4 {
-    font-size: 18px;
-    font-family: 'Nunito';
+  font-size: 18px;
+  font-family: 'Nunito';
 }
 
 .contact-link ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 17px;
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
 }
 
 .footer-icons {
-   display: flex;
-   align-items: center;
-   gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .contact-link ul li {
-    list-style: none;
-    line-height: 22px;
+  list-style: none;
+  line-height: 22px;
 }
 
 .contact-link ul {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 
 .footer-copyrigth p {
-    text-align: center;
-    padding: 21px 0px 0px 0px;
-    font-size: 19px;
+  text-align: center;
+  padding: 21px 0px 0px 0px;
+  font-size: 19px;
 }
+
 .footer-copyrigth {
-    border-top: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .footer-copyrigth span {
-    color: #d80c0f;
+  color: #d80c0f;
 }
+
 .footer-logo h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
 }
 
 /* footer */
 
 footer {
-    padding: 70px 0;
+  padding: 70px 0;
 }
+
 .container {
-    width: 1370px;
-    margin: 0 auto;
+  width: 1370px;
+  margin: 0 auto;
 }
 
 .col-lg-3 {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
+
 .col-lg-4 {
-    float: left;
-    width: 33.33%;
+  float: left;
+  width: 33.33%;
 }
+
 .col-lg-2 {
-    float: left;
-    width: 16.66%;
+  float: left;
+  width: 16.66%;
 }
+
 .row {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .fo-2 .footer-logo img {
-    width: 161px;
+  width: 161px;
 }
+
 .footer-icons ul li {
-    float: left;
-    list-style: none;
-    margin: 0 4px;
+  float: left;
+  list-style: none;
+  margin: 0 4px;
 }
+
 .footer-icons ul li a {
-    color: white;
-    font-size: 17px;
-    background: #202020;
-    PADDING: 13PX 12PX;
-    DISPLAY: inline-block;
-    line-height: 13px;
-    border-radius: 50%;
+  color: white;
+  font-size: 17px;
+  background: #202020;
+  PADDING: 13PX 12PX;
+  DISPLAY: inline-block;
+  line-height: 13px;
+  border-radius: 50%;
 }
+
 .footer-icons ul {
-    overflow: hidden;
-    margin-top: 24px;
+  overflow: hidden;
+  margin-top: 24px;
 }
+
 .fo-2 p {
-    line-height: 1.6;
-    text-align: justify;
-    margin-top: 31px;
-    color: #54595f;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 31px;
+  color: #54595f;
 }
+
 .fo-2 {
-    padding-right: 80px;
+  padding-right: 80px;
 }
+
 .footer-links ul li {
-    list-style: none;
-    margin: 6px 0px 0px 0px;
+  list-style: none;
+  margin: 6px 0px 0px 0px;
 }
+
 .footer-links ul {
-    margin-top: 33px;
+  margin-top: 33px;
 }
+
 .footer-links ul li a {
-    color: #54595f;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
+  color: #54595f;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
 }
-.footer-links ul li a:hover{
+
+.footer-links ul li a:hover {
   text-decoration: underline;
   color: #000;
 }
+
 .footer-links h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-contact h3 {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0px 0px 39px 0px;
-    padding: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px 0px 39px 0px;
+  padding: 0;
 }
 
 .footer-contact .contact-link {
-    margin-top: 25px;
+  margin-top: 25px;
 }
+
 .contact-link h4 {
-    font-size: 18px;
-    font-family: 'Nunito';
+  font-size: 18px;
+  font-family: 'Nunito';
 }
 
 .footer-copyrigth p {
-    text-align: center;
-    padding: 21px 0px 0px 0px;
-    font-size: 15px;
-    color: rgb(102, 102, 102);
-    font-weight: 500;
-}
-.footer-copyrigth {
-    border-top: 1px solid white;
+  text-align: center;
+  padding: 21px 0px 0px 0px;
+  font-size: 15px;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
 }
 
-.footer-copyrigth span a {color: rgb(102, 102, 102);}
+.footer-copyrigth {
+  border-top: 1px solid white;
+}
+
+.footer-copyrigth span a {
+  color: rgb(102, 102, 102);
+}
+
 .footer-logo h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
 }
+
 .footer-contact .contact-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 22px;
-    margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22px;
+  margin-bottom: 14px;
 }
- 
-.footer-contact .contact-links h4:hover{
+
+.footer-contact .contact-links h4:hover {
   text-decoration: underline;
   color: black;
 }
+
 .footer-contact .contact-links h4 {
-    font-size: 15px;
-    font-family: nunito;
-    font-weight: 500;
-    color: #54595f;
+  font-size: 15px;
+  font-family: nunito;
+  font-weight: 500;
+  color: #54595f;
 }
-.icons i {
-    color: #54595fb0;
+
+.contact-links .icons i {
+  color: #54595fb0;
 }
+
 .end-icons ul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
 }
 
 .end-icons ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .end-icons ul li a {
-    color: black;
-    padding: 7px 7px;
-    display: block;
-    border-radius: 50%;
-    background-color: #f5f5f5;
+  color: black;
+  padding: 7px 7px;
+  display: block;
+  border-radius: 50%;
+  background-color: #f5f5f5;
 }
 
 .end-icons ul li a i {
-    display: block;
+  display: block;
 }
-.footer-copyrigth span a:hover{
+
+.footer-copyrigth span a:hover {
   text-decoration: underline;
   color: #000;
 }

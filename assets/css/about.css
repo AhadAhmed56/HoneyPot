@@ -185,172 +185,171 @@ section.grid-sec {
     display: block;
 }
 
+
 /* accordion */
 section.accordion-sec {
     background-color: #F2F2F2;
-    padding: 70px 0px;
+    padding: 80px 0px;
+    overflow: hidden;
 }
 
-section.accordion-sec .accordion-sec .tab-content .content h4 {
+.accordin-sec .content h4 {
     font-size: 40px;
     font-weight: 700;
     font-family: 'Nunito';
+    line-height: 1.2;
 }
 
-.tab-contnet .content h4 {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Nunito';
-}
-
-.tab-contnet .content p {
+.accordin-sec .content p {
     color: #666;
     font-size: 15px;
-    margin: 30px 0px ;
-}
-button {
-    color: #000;
+    margin: 25px 0px;
 }
 
 .accordion-button {
-    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 20px 20px 60px !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease;
 }
 
-.accordion {
-    margin: 40px 0px;
+.accordion-item {
+    border: none !important;
+    margin-bottom: 15px;
+    background: transparent !important;
 }
 
-.accordion .accordion-item {
-    border: none;
-    padding: 10px 0px ;
-    
-}
-
-.accordion .accordion-item h2 button {
-    font-size: 20px;
-    font-weight: 500;
-    padding-left: 50px !important;
-}
 .accordion-button:not(.collapsed) {
-    color: #ffd72f;
-    background-color: transparent;
+    color: #000 !important;
+    background-color: #fff !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.accordion-button::after {
+    background-image: unset !important;
+    position: absolute;
+    content: '\f107';
+    font-family: "Font Awesome 7 Free";
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "\f106";
+    transform: translateY(-50%);
+}
+
+.accordion-button:focus {
     box-shadow: none;
 }
- .accordion-button::after {
-        background-image: unset;
-        position: absolute;
-        content: '\f107';
-        font-family: "Font Awesome 6 Free";
-        right: auto;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 30px;
-        width: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #e7deff;
-        border-radius: 50%;
-        color: #1e0761;
-        font-size: 14px;
-        font-weight: 900;
-        border: none;
-    }
 
-    .accordion-button:not(.collapsed)::after {
-        content: "\f146";
-    }
-     .accordion-button:focus {
-        box-shadow: none;
-    }
-    .accordion-body {
-    padding: 1.5rem 1.25rem 1.5rem 60px;
-    background-color: #F2F2F2;
-    transition: all 0.3s ease;
-    line-height: 1.6;
+.accordion-body {
+    padding: 10px 20px 25px 60px;
+    background-color: transparent;
+    line-height: 1.8;
+    color: #555;
 }
 
-.accrodin-sec .tab-contnet {
-    padding: 56px 0px  0px 0px;
+.accordin-sec {
+    padding-top: 20px;
 }
 
 /* simple card section */
 .simple-card {
-  padding: 80px 0;
-  background: #f8f9fa;
+    padding: 80px 0;
+    background: #f8f9fa;
 }
 
 .simple-card .card-group {
-  gap: 25px;
+    gap: 25px;
 }
 
 .simple-card .card {
-  border: none;
-  padding: 35px 25px;
-  text-align: center;
-  border-radius: 12px;
-  background: #ffffff;
-  /* transition: all 0.4s ease; */
+    border: none;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: all 0.4s ease;
 }
+
 /* icon styling */
-.simple-card .icons{
-  width: 70px;
-  height: 70px;
-  margin: 0  auto;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.simple-card .icons {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .simple-card .icons i {
-  font-size: 50px;
-  color: #ffd72f;
-  transition: color 0.3s linear;
+    font-size: 50px;
+    color: #ffd72f;
+    transition: color 0.3s linear;
 }
+
 .simple-card .icons i:hover {
-  color: #000;
-  animation: bounceUpDown 0.7s ease-in-out 1;
+    color: #000;
+    animation: bounceUpDown 0.7s ease-in-out 1;
 }
 
 /* keyframes */
 @keyframes bounceUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-12px); 
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(12px); 
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-12px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* card content */
 .simple-card .card-title a {
-  font-size: 20px;
-  font-weight: 600;
-  color: #222;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 700;
 }
 
 .simple-card .card-text {
-  font-size: 15px;
-  line-height: 1.7;
-  color: #666;
-  margin-top: 10px;
-  font-weight: 500;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-top: 10px;
+    font-weight: 500;
 }
+
 /* COUNTER */
-.counter-sec{
+.counter-sec {
     padding: 95px 0px;
     background-image: url(/assets/images/about-parallax.jpg);
     background-attachment: fixed;
@@ -358,6 +357,7 @@ button {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 .counter h2 {
     font-size: 50px;
     color: white;
@@ -373,6 +373,7 @@ button {
 .counter {
     text-align: center;
 }
+
 /* .end-about */
 section.end-sec {
     padding: 75px 0px;
@@ -408,6 +409,7 @@ section.end-sec {
     font-weight: 700;
     border-radius: 29px;
 }
+
 .end-content a:hover {
     background-color: #000;
     color: #fff;

@@ -1,0 +1,22 @@
+section.faqs-sec {
+    padding: 70px 0px;
+}
+
+.image-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.faqs-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.faqs-content p {
+    font-size: 15px;
+    font-size: 500;
+}
+
+.faqs-content {
+    margin: 0 27px;
+}
