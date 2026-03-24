@@ -51,16 +51,46 @@ img {
 header {
   position: absolute;
   top: 0;
-  left: 174px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 1370px;
   z-index: 1000;
+  padding: 40px 0;
+}
+
+.header-top {
+  margin: 35px 0px;
+}
+
+.logo a {
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  color: #000;
+  display: block;
+  line-height: 1;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.header-icon {
+    position: absolute;
+    right: 30px;
+    bottom: -54px;
+    z-index: -10;
+}
+
+.header-icon img {
+  width: 70px;
+
+}
+
+.navBar-container {
   background: white;
-  margin: 128px 88px;
-  border-radius: 40px;
-  padding: 20px 30px;
-  /* text-align: center; */
-  width: max-content;
+  border-radius: 60px;
+  padding: 15px 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: block;
 }
 
 /* NAV */
@@ -209,10 +239,9 @@ header.scrolled {
   background-color: #000;
 }
 
-.logo {
-  position: absolute;
-  top: -30%;
-  left: 10%;
+/* Redundant logo styling removed */
+.old-logo-removed {
+  display: none;
 }
 
 header .image {
