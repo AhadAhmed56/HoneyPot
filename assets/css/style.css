@@ -60,7 +60,7 @@ header {
 }
 
 .header-top {
-  margin: 35px 0px;
+  margin: 5px 0px 43px 0px;
 }
 
 .logo a {
@@ -69,15 +69,15 @@ header {
   color: #000;
   display: block;
   line-height: 1;
-  width: 200px;
+  width: 170px;
   margin: 0 auto;
 }
 
 .header-icon {
-    position: absolute;
-    right: 30px;
-    bottom: -54px;
-    z-index: -10;
+  position: absolute;
+  right: 30px;
+  bottom: -54px;
+  z-index: -10;
 }
 
 .header-icon img {
@@ -88,8 +88,8 @@ header {
 .navBar-container {
   background: white;
   border-radius: 60px;
-  padding: 15px 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 19px 43px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: block;
 }
 
@@ -112,6 +112,56 @@ header {
   font-weight: 700;
   color: #000;
   transition: all 0.3s ease;
+  display: block;
+}
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.navBar ul li {
+  list-style: none;
+  position: relative;
+}
+
+.navBar ul li a {
+  padding: 6px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #000;
+  transition: 0.3s;
+  display: block;
+}
+
+/* Hover effect */
+.navBar ul li a:hover {
+  background-color: #ffd72f;
+}
+
+/* Dropdown hidden by default */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+/* Dropdown items */
+.dropdown-menu li a {
+  padding: 10px 15px;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
@@ -218,7 +268,7 @@ header.scrolled {
 .slide-content h4 {
   color: #111;
   font-family: 'Great Vibes';
-  font-size: 44px;
+  font-size: 55px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -226,7 +276,7 @@ header.scrolled {
 .slide-content h3 {
   color: #000;
   font-family: 'Nunito';
-  font-size: 56px;
+  font-size: 70px;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -253,6 +303,13 @@ header .image {
 .card-sec {
   padding: 85px 0px 10px 0px;
 }
+.card-sec .cards {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  padding: 18px 6px;
+  flex-wrap: nowrap;
+}
 
 .card-sec h4 {
   font-size: 34px;
@@ -269,11 +326,16 @@ header .image {
   font-family: 'Nunito';
 }
 
-.svg-img {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+
+.image-svg svg {
+  height: 80px;
+  width: 100%;
+  transition: all .4s ;
 }
+.image-svg svg:hover {
+transform: translateY(-8px);
+}
+
 
 .card-sec .card-body {
   text-align: center;
@@ -294,41 +356,17 @@ header .image {
 
 .money-card {
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   padding: 24px 10px 9px 0px;
   align-items: center;
 }
-
-
-.money-card .svg-img {
-  width: 92px;
-  height: 92px;
-  margin: 6px auto 18px auto;
-  display: block;
-  background: linear-gradient(180deg, #fff 0%, #fff 60%);
-  border-radius: 50%;
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-  box-shadow: 0 6px 18px rgba(17, 17, 17, 0.04);
+.card-sec .cards .money-card:hover{
+  border: 1px solid #ffd72f;
 }
-
-.money-card .svg-img:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(17, 17, 17, 0.08);
-}
-
 .card-sec .card-body h5 {
   margin-top: 6px;
 }
-
-.cards {
-  display: flex;
-  gap: 22px;
-  overflow-x: auto;
-  padding: 18px 6px;
-  flex-wrap: nowrap;
-}
-
 .cards::-webkit-scrollbar {
   height: 6px;
   background: rgba(0, 0, 0, 0.12);
@@ -811,14 +849,14 @@ section.blog {
 
 /* logos */
 .logos-sec {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 70px 0px;
 }
-
-.logos {
-  border-top: 1px solid black;
-  padding: 60px 0px;
+.logos-sec .image img {
+  display: inline-block;
 }
 
 /* contact */
