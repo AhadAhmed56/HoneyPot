@@ -52,13 +52,13 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #000;
+    border-color: var(--black-color);
 }
 
 /* button */
 .contact-form button {
     background: #ffd72f;
-    color: #fff;
+    color: var(--black-color);
     border: none;
     padding: 11px 25px;
     border-radius: 20px;
@@ -69,5 +69,6 @@
 }
 
 .contact-form button:hover {
-    background: #333;
+    background: var(--black-color);
+    color: var(--white-color);
 }

@@ -30,11 +30,13 @@
 body {
   line-height: 1.6;
   font-family: 'Nunito', sans-serif;
+  color: var(--black-color);
 }
 
 p {
   font-weight: 500;
   font-size: 15px;
+  color: var(--muted-text);
 }
 
 a {
@@ -42,6 +44,7 @@ a {
   font-weight: 600;
   font-size: 16px;
   transition: color 0.3s ease;
+  display: block;
 }
 
 h4 {
@@ -86,7 +89,7 @@ section.product {
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in;
   color: var(--black-color);
   text-decoration: none;
 }
@@ -105,7 +108,7 @@ section.product {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in;
   color: var(--white-color) !important;
   text-decoration: none;
 }
@@ -166,7 +169,6 @@ header {
   overflow: visible;
 }
 
-/* NAV */
 .navBar ul {
   display: flex;
   justify-content: center;
@@ -213,11 +215,11 @@ header {
   background-color: var(--primary-color);
 }
 
-/* Dropdown hidden by default */
+
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 15px);
   left: 0;
+  top: 60px;
   background: var(--white-color);
   min-width: 200px;
   display: block;
@@ -230,7 +232,8 @@ header {
   border-top: 3px solid var(--primary-color);
   transition: all 0.3s ease;
   transform: translateY(10px);
-  z-index: 1001;
+  /* z-index: 1001; */
+  color: var(--black-color);
 }
 
 .dropdown-menu::before {
@@ -239,11 +242,10 @@ header {
   top: -20px;
   left: 0;
   width: 100%;
-  height: 20px;
+  height: 10px;
   background: transparent;
 }
 
-/* Dropdown items */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -270,11 +272,13 @@ header {
   color: var(--text-color) !important;
   background: transparent !important;
   transition: all 0.2s ease;
+  margin: 0;
 }
 
 .dropdown-menu li a:hover {
   color: var(--primary-color) !important;
   padding-left: 30px !important;
+  margin: 0;
 }
 
 .navBar ul li a:hover,
@@ -282,13 +286,31 @@ header {
   background-color: var(--primary-color);
 }
 
-/* ICONS */
 .icons a {
   font-size: 20px;
   margin-left: 18px;
   color: var(--black-color);
 }
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
 
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ffcc00; /* yellow like your theme */
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* banner */
 
 .slide-img {
@@ -377,7 +399,6 @@ header.scrolled {
 }
 
 .swiper-slide-active .slide-fade {
-  opacity: .8;
   transform: translateZ(0);
 }
 
@@ -421,12 +442,6 @@ header.scrolled {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 40px;
-}
-
-
-/* Redundant logo styling removed */
-.old-logo-removed {
-  display: none;
 }
 
 header .image {
@@ -539,13 +554,11 @@ transform: translateY(-8px);
 }
 
 .sales .cotent-image .content a {
-  padding: 8px 22px;
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   transition: 0.3s ease;
-  background-color: var(--black-color);
   color: var(--white-color) !important;
+  padding: 10px 26px;
 }
 
 
@@ -600,7 +613,7 @@ transform: translateY(-8px);
 }
 
 .product-content .content a h4:hover {
-  color: var(--black-10);
+  color: var(--text-color);
 }
 
 .product-content .content ul {
@@ -773,6 +786,7 @@ transform: translateY(-8px);
 .our-product-content .content p {
   font-size: 15px;
   margin: 0 auto;
+  color: var(--black-color);
 }
 
 .our-product-content-1 {
@@ -1055,7 +1069,7 @@ footer {
 .fo-2 p {
   line-height: 1.6;
   text-align: justify;
-  margin-top: 31px;
+  margin-top: 16px;
   color: var(--text-color);
 }
 
@@ -1069,7 +1083,8 @@ footer {
 }
 
 .footer-links ul {
-  margin-top: 33px;
+  margin-top: 16px;
+  padding: 0;
 }
 
 .footer-links ul li a {
@@ -1096,7 +1111,7 @@ footer {
   color: var(--black-color);
   font-size: 18px;
   font-weight: 700;
-  margin: 0px 0px 39px 0px;
+  margin: 0px 0px 19px 0px;
   padding: 0;
 }
 
@@ -1122,6 +1137,12 @@ footer {
   font-weight: 500;
   margin: 0;
 }
+.footer-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+}
 
 .footer-bottom-copy span a {
   color: var(--text-color);
@@ -1135,10 +1156,9 @@ footer {
 
 .footer-contact .contact-links {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   gap: 22px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .footer-contact .contact-links h4:hover {

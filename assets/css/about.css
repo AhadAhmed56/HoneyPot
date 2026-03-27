@@ -69,9 +69,8 @@ img {
     font-size: 36px;
     font-weight: 700;
     font-family: 'Nunito';
-    /* margin-bottom: 8px; */
     color: #000;
-    /* margin: 58px 0px; */
+    margin-top: 6px;
 }
 
 /* breadcrumb clean */
@@ -82,18 +81,16 @@ img {
     justify-content: center;
 }
 
-.breadcrumb-item {
-    font-size: 14px;
-    font-weight: 500;
-    color: #000;
-}
-
 .breadcrumb-item a {
     color: #000;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .breadcrumb-item.active {
-    color: #555;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
 }
 
 /* section padding */

@@ -13,13 +13,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="/assets/css/faqs.css">
     <title>HoneyPot</title>
 </head>
 
 <body>
 
-     <!-- header -->
     <header>
         <div class="container">
             <!-- Header Top: Logo and Icon -->
@@ -41,22 +40,31 @@
                     <div class="col-lg-8">
                         <nav class="navBar">
                             <ul class="mb-0">
-                                <li class="nav-item"><a  href="index.html">Home</a></li>
-                            <li class="nav-item"><a href="#">Shop</a></li>
-                            <li class="nav-item"><a href="/about.html">About</a></li>
-                            <li class="nav-item"><a href="/contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="active" href="/faqs.html">FAQ</a></li>
-                            <li class="nav-item"><a href="privacy.html">Privacy Policy</a></li>
+                                <li class="nav-item"><a href="index.html">Home</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href="#">Shop <i class="fas fa-chevron-down ms-1"
+                                            style="font-size: 10px;"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Fresh Honey</a></li>
+                                        <li><a href="#">Organic Honey</a></li>
+                                        <li><a href="#">Forest Honey</a></li>
+                                        <li><a href="#">Farming Honey</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="/about.html">About</a></li>
+                                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                                <li class="nav-item"><a href="/faqs.html" class="active">FAQ</a></li>
+                                <li class="nav-item"><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </nav>
                     </div>
 
                     <!-- ICONS -->
-                <div class="col-lg-4 d-flex justify-content-end">
+                    <div class="col-lg-4 d-flex justify-content-end">
                         <div class="icons d-flex align-items-center">
                             <a href="#"><i class="fas fa-search"></i></a>
                             <a href="#"><i class="fas fa-user"></i></a>
-                        <a href="#"><i class="fas fa-lock"></i></a>
+                            <a href="#"><i class="fas fa-lock"></i></a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +87,7 @@
         </div>
     </section>
     <!-- faqs-sec-start -->
-    
+
     <section class="faqs-sec">
         <div class="container">
             <div class="row">
@@ -89,37 +97,97 @@
                         <h3>Frequently Asked Questions</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
                             ullamcorper mattis, pulvinar dapibus leo.</p>
-                            <div class="image">
-                                <img src="/assets/images/faq-banner.jpg" alt="">
-                            </div>
+                        <div class="image">
+                            <img src="/assets/images/faq-banner.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="faqs-content">
-                            <h3>How can you help?</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                ullamcorper mattis, pulvinar dapibus leo.</p>
-                                <h3>
-                                    What is a return policy?</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                        ullamcorper mattis, pulvinar dapibus leo.</p>
-                                        <h3>What payment methods do you accept?</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                            ullamcorper mattis, pulvinar dapibus leo.</p>
-                                            <h3>Do you sell gift cards?</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                                                ullamcorper mattis, pulvinar dapibus leo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            
-                            <!-- faqs-sec-end -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="faqs-content">
+                        <h3>How can you help?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>
+                            What is a return policy?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>What payment methods do you accept?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <h3>Do you sell gift cards?</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- faqs-sec-end -->
+    <!-- simple-card-sec-start -->
+    <section class="simple-card">
+        <div class="container">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="icons">
+                            <i class="fa-regular fa-square-check"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Submit a task</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus.</p>
+                            .</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icons">
+                            <i class="fa-regular fa-comment"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Send message</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icons">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Trusted experience</a>
+                            </h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                tellus..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- simple-card-sec-end -->
+    <!-- .contact-sec-start -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-box">
+                <h3>Subscribe To Our Newsletter</h3>
+                <p>Subscribe to our latest newsletter to get news about special discounts.</p>
 
+                <div class="form-sec">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
-    <footer>
+    <!-- footer -->
+    <footer class="sec-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -167,19 +235,19 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="footer-links">
-                        <h3>Quick Links</h3>
+                        <h3>Your Account</h3>
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="about.html">About</a>
                             </li>
                             <li>
                                 <a href="#">Services</a>
                             </li>
                             <li>
-                                <a href="#">Faq</a>
+                                <a href="faqs.html">Faq</a>
                             </li>
                             <li>
                                 <a href="#">Who We Are</a>
@@ -199,74 +267,63 @@
                             <div class="icons">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <h4>60 29th Street San Francisco, 507-Union Trade Center, United States America - 94110</h3>
+                            <h4>60 29th Street San Francisco, 507-Union Trade Center, United States America - 94110</h4>
                         </div>
                         <div class="contact-links">
                             <div class="icons">
                                 <i class="fa-solid fa-tty"></i>
                             </div>
-                            <h4>(+91)-012-345-6789</h3>
+                            <h4>(+91)-012-345-6789</h4>
                         </div>
                         <div class="contact-links">
                             <div class="icons">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
-                            <h4>(+91) 9876-543-210</h3>
+                            <h4>(+91) 9876-543-210</h4>
                         </div>
                         <div class="contact-links">
                             <div class="icons">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
-                            <h4>support@demo.com</h3>
+                            <h4>support@demo.com</h4>
                         </div>
                     </div>
 
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="end-icons">
-                        <ul>
-                            <li>
-                                <a href="javascripts;">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="$">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-pinterest"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="end-icons">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-copyrigth">
-                        <p>© 2026 Honeypot Demo - WordPress Theme by
-
-                            <span><a href="javascripts:">Avanam</a></span>
-                        </p>
+                    <div class="col-lg-4">
+                        <div class="footer-bottom-copy">
+                            <p>© 2026 Honeypot Demo - WordPress Theme by <span><a href="#">Avanam</a></span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="iamge-footer-end">
-                        <img src="/assets/images/payment-img.png" alt="">
+                    <div class="col-lg-4">
+                        <div class="iamge-footer-end">
+                            <img src="/assets/images/payment-img.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
