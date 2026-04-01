@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>HoneyPot</title>
 </head>
 
@@ -20,16 +21,27 @@
     <header>
         <div class="container">
             <!-- Header Top: Logo and Icon -->
-            <div class="header-top text-center position-relative">
+            <div class="header-top d-flex align-items-center justify-content-between position-relative">
+                <div class="mobile-toggle d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <div class="logo">
                     <a href="index.html">
                         <img src="/assets/images/logo.svg" alt="">
                     </a>
                 </div>
-                <div class="header-icon">
-                    <img src="/assets/images/header-icon.png" alt="Bee Icon">
+                <div class="header-icons-mobile d-lg-none">
+                    <div class="icons d-flex align-items-center">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#" class="cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
                 </div>
             </div>
+
 
             <!-- Header Nav Bar -->
             <div class="navBar-container">
@@ -57,19 +69,21 @@
                         </nav>
                     </div>
 
-                    <!-- ICONS -->
-                    <div class="col-lg-4 d-flex justify-content-end">
+                    <!-- ICONS (Desktop Only) -->
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-end">
                         <div class="icons d-flex align-items-center">
                             <a href="#"><i class="fas fa-search"></i></a>
                             <a href="#"><i class="far fa-user"></i></a>
                             <a href="#" class="cart-icon">
-                                <i class="fas fa-lock"></i>
+                                <i class="fas fa-shopping-bag"></i>
                                 <span class="cart-count">0</span>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
     </header>
 
     <!-- end-header -->

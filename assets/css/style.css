@@ -311,6 +311,11 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+.header-icons-mobile {
+  display: none;
+}
+
 /* banner */
 
 .slide-img {

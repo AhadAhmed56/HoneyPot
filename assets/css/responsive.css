@@ -1,0 +1,187 @@
+/* Optimized Responsive Styles */
+
+/* Broad responsiveness (up to 1399px) */
+@media only screen and (min-width: 100px) and (max-width: 1399px) {
+  header {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+/* Adjust for Laptop (up to 1199px) */
+@media only screen and (min-width: 100px) and (max-width: 1199px) {
+  .logo img {
+      width: 150px;
+  }
+  
+  .navBar ul {
+      gap: 15px;
+  }
+
+  .slide-content h3 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .slide-content h4 {
+    font-size: 40px;
+  }
+}
+
+/* Adjust for Tablet (up to 991px) */
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    background: transparent;
+    padding: 15px 0;
+  }
+
+  .header-top {
+      padding: 0 15px;
+      margin-bottom: 0 !important;
+  }
+
+  .mobile-toggle {
+    display: block !important;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .logo {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .logo img {
+    max-width: 140px;
+    display: inline-block;
+  }
+
+  .navBar-container {
+    display: none !important;
+  }
+
+  .header-icons-mobile {
+      display: block !important;
+  }
+
+  .icons a {
+    font-size: 20px;
+    margin-left: 12px;
+    color: #000;
+  }
+
+  /* Slider / Banner Content Positioning for mobile */
+  .slide-content {
+      left: 10% !important;
+      top: 45% !important;
+      transform: translateY(-50%) !important;
+      text-align: left !important;
+  }
+
+  .slide-content h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .slide-content h4 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .Content-img img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Swiper Pagination Style */
+  .swiper-pagination {
+      bottom: 25px !important;
+  }
+
+  .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: #000 !important;
+      opacity: 0.3;
+      margin: 0 5px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+      background: #000 !important;
+      opacity: 1;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+      display: none !important;
+  }
+}
+
+/* Adjust for Large Mobile (up to 767px) */
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+  .logo img {
+    max-width: 120px;
+  }
+
+  .slide-content {
+      top: 50% !important;
+  }
+
+  .slide-content h3 {
+    font-size: 30px;
+  }
+
+  .slide-content h4 {
+    font-size: 24px;
+  }
+
+  .Content-img img {
+    height: 480px;
+  }
+  
+  .btn-black {
+      padding: 8px 18px;
+      font-size: 14px;
+  }
+}
+
+/* Adjust for Small Mobile (up to 575px) */
+@media only screen and (min-width: 100px) and (max-width: 575px) {
+  .logo img {
+    max-width: 110px;
+  }
+
+  .icons a {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  .slide-content {
+      left: 5% !important;
+  }
+
+  .slide-content h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .slide-content h4 {
+    font-size: 20px;
+  }
+  
+  .slide-content a {
+      margin-top: 10px !important;
+  }
+  
+  .Content-img img {
+    height: 450px;
+  }
+}
