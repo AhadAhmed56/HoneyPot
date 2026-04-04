@@ -22,6 +22,8 @@
     <header>
         <div class="container">
             <!-- Mobile Header: Toggle | Logo | Icons -->
+            <div class="row">
+            <!-- Header Top: Logo and Icon -->
             <div class="header-top d-flex align-items-center justify-content-between position-relative">
 
                 <!-- Toggle Button (Mobile Left) -->
@@ -94,6 +96,13 @@
                 </div>
             </div>
 
+
+            <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
+</div>
+            </div>
+
     </header>
 
     <!-- end-header -->
@@ -114,7 +123,7 @@
                                     <h3 class="slide-fade">
                                         Healthy Purified<br>Sweet Honey
                                     </h3>
-                                    <a href="#" class="btn-black mt-3 slide-fade btn">
+                                    <a href="#" class="btn-black mt-3 slide-fade btn-hover">
                                         SHOP NOW
                                     </a>
                                 </div>
@@ -128,7 +137,7 @@
                                     <h3 class="slide-fade ">
                                         Lemon Creamed<br>Honey Stash
                                     </h3>
-                                    <a href="#" class="btn-black mt-3 slide-fade btn">
+                                    <a href="#" class="btn-black mt-3 slide-fade btn-hover">
                                         SHOP NOW
                                     </a>
                                 </div>
@@ -151,9 +160,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-
-                    <h4 class="text-center">Best Feature</h4>
-                    <h2 class="text-center">We Provide The Best Quality</h2>
+                    <div class=" text-center web-title">
+                        <h4>Best Feature</h4>
+                        <h2>We Provide The Best Quality</h2>
+                    </div>
                 </div>
             </div>
             <div class="row ">
@@ -303,7 +313,7 @@
                                 Best summner Sale <br>
                                 50% OFF
                             </h3>
-                            <a href="#" class="btn-black mt-3">
+                            <a href="#" class="btn-black mt-3 btn-hover">
                                 SHOP NOW
                             </a>
                         </div>
@@ -321,7 +331,7 @@
                             <h3>
                                 100% Natural Bee<br>Honeycomb
                             </h3>
-                            <a href="#" class="btn-black mt-3">
+                            <a href="#" class="btn-black mt-3 btn-hover">
                                 SHOP NOW
                             </a>
                         </div>
@@ -337,9 +347,9 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div class="content">
-                        <h4 class="text-center">New Arrivals</h4>
-                        <h2 class="text-center">Latest Products</h2>
+                    <div class=" web-title text-center">
+                        <h4>New Arrivals</h4>
+                        <h2>Latest Products</h2>
                     </div>
                 </div>
             </div>
@@ -564,9 +574,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="content">
-                        <h4 class="text-center">Why Choose Us</h4>
-                        <h2 class="text-center">Why Choose Our Products</h2>
+                    <div class=" web-title text-center">
+                        <h4>Why Choose Us</h4>
+                        <h2>Why Choose Our Products</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -649,7 +659,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <div class="content">
+                        <div class="content web-title">
                             <h4>About Us</h4>
                             <h2>Natural Honey Is A Very Good Food For Health.</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
@@ -679,10 +689,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-
-                    <div class="content">
-                        <h4 class="text-center">New Arrivals</h4>
-                        <h2 class="text-center">Latest Products</h2>
+                    <div class="text-center web-title mb-4"  >
+                        <h4>New Arrivals</h4>
+                        <h2>Latest Products</h2>
                     </div>
                 </div>
             </div>
@@ -906,9 +915,9 @@
     <section class="Testimonials sec-padding">
         <div class="container gx-0">
             <div class="row">
-                <div class="content">
-                    <h4 class="text-center">Our Testimonials</h4>
-                    <h2 class="text-center">Our Client's Feedback</h2>
+                <div class="text-center web-title mb-4">
+                    <h4 >Our Testimonials</h4>
+                    <h2 >Our Client's Feedback</h2>
                 </div>
             </div>
             <div class="row res-testimonials">
@@ -974,7 +983,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="content">
+                    <div class="center web-title mb-4">
                         <h4 class="text-center">From The Blog</h4>
                         <h2 class="text-center">Our Latest Blog</h2>
                     </div>
@@ -1069,7 +1078,7 @@
 
                 <div class="form-sec">
                     <input type="email" placeholder="Enter your email address">
-                    <button>Subscribe</button>
+                    <button class="btn-black btn-hover">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -1389,6 +1398,25 @@
                 $(this).parent().toggleClass('active');
             }
         });
+
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navBar = document.querySelector(".navBar");
+
+  toggleBtn.onclick = () => {
+    navBar.classList.toggle("active");
+  };
+
+  // Dropdown for mobile
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(drop => {
+    drop.addEventListener("click", function(e) {
+      if (window.innerWidth < 991) {
+        e.preventDefault();
+        this.classList.toggle("active");
+      }
+    });
+  });
 
     </script>
 </body>

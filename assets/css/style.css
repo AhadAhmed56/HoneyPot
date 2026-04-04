@@ -54,7 +54,7 @@ a {
   display: block;
 }
 
-h4 {
+.web-title h4 {
   font-size: 34px;
   color: var(--heading-color);
   font-weight: 400;
@@ -62,30 +62,38 @@ h4 {
   margin-bottom: 10px;
 }
 
-h2 {
+.web-title h2 {
   font-size: 40px;
   color: var(--black-color);
   font-weight: 700;
   font-family: 'Nunito';
 }
-
+li{
+  list-style: none;
+  display: inline-block;
+}
+button {
+  border: none;
+  cursor: pointer;
+  display:  inline-block;
+}
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
+.menu-toggle {
+    display: none;
+}
 .sec-padding {
   padding: 80px 0 0px 0px ;
 }
 section.card-sec {
     padding-bottom: 0px;
 }
-
 section.product {
     padding-bottom: 80px;
 }
-
 /* Universal Buttons */
 .btn-main {
   background-color: var(--primary-color);
@@ -100,12 +108,10 @@ section.product {
   color: var(--black-color);
   text-decoration: none;
 }
-
 .btn-main:hover {
   background-color: var(--black-color);
   color: var(--white-color);
 }
-
 .btn-black {
   background-color: var(--black-color);
   padding: 10px 25px;
@@ -119,23 +125,19 @@ section.product {
   color: var(--white-color) !important;
   text-decoration: none;
 }
-
 .btn-black:hover {
   background-color: var(--primary-color);
   color: var(--black-color) !important;
 }
-.btn:hover{
-  background-color: var(--white-color);
-  color: var(--black-color);
+.btn-hover:hover{
+  background-color: var(--footer-dark) !important;
+  color: var(--white-color) !important;
 }
-
 header {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 100%;
-  max-width: 1370px;
   z-index: 1000;
   padding: 40px 0;
 }
@@ -471,20 +473,7 @@ header .image {
   flex-wrap: nowrap;
 }
 
-.card-sec h4 {
-  font-size: 34px;
-  color: var(--heading-color);
-  font-weight: 400;
-  font-family: 'Great Vibes';
-  margin-bottom: 10px;
-}
 
-.card-sec h2 {
-  font-size: 40px;
-  color: var(--black-color);
-  font-weight: 700;
-  font-family: 'Nunito';
-}
 
 
 .image-svg svg {
@@ -977,10 +966,10 @@ transform: translateY(-8px);
 }
 
 .contact-box h3 {
-  font-size: 32px;
+  font-size: 35px;
   margin-bottom: 10px;
   color: var(--heading-color);
-  font-weight: 700;
+  font-weight: bolder;
 }
 
 .contact-box p {
@@ -1008,52 +997,19 @@ transform: translateY(-8px);
   border-color: #c59d5f;
 }
 
-.form-sec button {
-  padding: 14px 30px;
-  border-radius: 50px;
-  border: none;
-  background: var(--black-color);
-  color: var(--white-color);
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+
 
 .form-sec button:hover {
   background: var(--primary-color);
   color: var(--black-color);
-  border: 1px solid var(--black-color);
-}
+  /* border: 1px solid var(--black-color); */
+} 
 
 /* footer */
 
 footer {
   padding-bottom: 70px ;
 }
-
-.container {
-    max-width: 1370px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.col-lg-3 {
-  float: left;
-  width: 25%;
-}
-
-.col-lg-4 {
-  float: left;
-  width: 33.33%;
-}
-
-.col-lg-2 {
-  float: left;
-  width: 16.66%;
-}
-
 
 .fo-2 .footer-logo img {
   width: 161px;
@@ -1099,6 +1055,8 @@ footer {
 .footer-links ul {
   margin-top: 16px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-links ul li a {
