@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>HoneyPot</title>
 </head>
 
 <body>
+
+    <div class="wrapper">
     <!-- header -->
     <header>
         <div class="container">
-            <!-- Header Top: Logo and Icon -->
+            <!-- Mobile Header: Toggle | Logo | Icons -->
             <div class="header-top d-flex align-items-center justify-content-between position-relative">
+
+                <!-- Toggle Button (Mobile Left) -->
                 <div class="mobile-toggle d-lg-none">
-                    <i class="fas fa-bars"></i>
+                    <span>&#9776;</span>
                 </div>
+
+                <!-- Logo (Center on Mobile) -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/images/logo.svg" alt="">
+                        <img src="assets/images/logo.svg" alt="Honeypot">
                     </a>
                 </div>
+
+                <!-- Icons (Mobile Right) -->
                 <div class="header-icons-mobile d-lg-none">
                     <div class="icons d-flex align-items-center">
                         <a href="#"><i class="fas fa-search"></i></a>
@@ -40,11 +47,14 @@
                         </a>
                     </div>
                 </div>
-            </div>
 
+            </div>
 
             <!-- Header Nav Bar -->
             <div class="navBar-container">
+                <div class="close-menu d-lg-none">
+                    <i class="fas fa-times"></i>
+                </div>
                 <div class="row align-items-center">
                     <!-- NAV -->
                     <div class="col-lg-8">
@@ -61,9 +71,9 @@
                                         <li><a href="#">Farming Honey</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a href="/about.html">About</a></li>
-                                <li class="nav-item"><a href="/contact.html">Contact</a></li>
-                                <li class="nav-item"><a href="/faqs.html">FAQ</a></li>
+                                <li class="nav-item"><a href="about.html">About</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a href="faqs.html">FAQ</a></li>
                                 <li class="nav-item"><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </nav>
@@ -97,7 +107,7 @@
                         <div class="swiper-wrapper">
                             <!-- Slide 1 -->
                             <div class="swiper-slide ">
-                                <img src="/assets/images/main-banner-1.png" alt="banner-image">
+                                <img src="assets/images/main-banner-1.png" alt="banner-image">
                                 <!-- Text overlay -->
                                 <div class="slide-content">
                                     <h4 class="slide-fade">Best of spicy taste</h4>
@@ -111,7 +121,7 @@
                             </div>
                             <!-- Slide 2 -->
                             <div class="swiper-slide ">
-                                <img src="/assets/images/main-banner-2.png" alt="banner-image">
+                                <img src="assets/images/main-banner-2.png" alt="banner-image">
                                 <!-- Text overlay -->
                                 <div class="slide-content">
                                     <h4 class="slide-fade">Best of spicy taste</h4>
@@ -129,7 +139,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                         <!-- Pagination bullets -->
-                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-pagination"></div>
 
                     </div>
                 </div>
@@ -1211,7 +1221,8 @@
     </footer>
     <!-- footer end -->
 
-
+    <div class="menu-overlay"></div>
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1246,7 +1257,6 @@
             dots: true,
             infinite: false,
             speed: 300,
-            dots: false,
             slidesToShow: 4,
             slidesToScroll: 4,
             prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
@@ -1265,14 +1275,18 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false,
+                        dots: true
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true
                     }
                 }
 
@@ -1283,7 +1297,6 @@
             dots: true,
             infinite: false,
             speed: 300,
-            dots: false,
             slidesToShow: 2,
             slidesToScroll: 4,
             prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
@@ -1302,14 +1315,18 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false,
+                        dots: true
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true
                     }
                 }
 
@@ -1335,14 +1352,18 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false,
+                        dots: true
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
@@ -1351,6 +1372,23 @@
             ]
         });
 
+        $('.mobile-toggle').on('click', function() {
+            $('.navBar-container').addClass('active');
+            $('.menu-overlay').addClass('active');
+        });
+
+        $('.close-menu, .menu-overlay').on('click', function() {
+            $('.navBar-container').removeClass('active');
+            $('.menu-overlay').removeClass('active');
+        });
+
+        // Dropdown toggle for mobile
+        $('.nav-item.dropdown > a').on('click', function(e) {
+            if ($(window).width() <= 991) {
+                e.preventDefault();
+                $(this).parent().toggleClass('active');
+            }
+        });
 
     </script>
 </body>

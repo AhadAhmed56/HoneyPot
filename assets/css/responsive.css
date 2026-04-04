@@ -29,7 +29,7 @@
   }
 }
 
-/* Adjust for Tablet (up to 991px) */
+/* Adjust for Tablet / Mobile (up to 991px) */
 @media only screen and (min-width: 100px) and (max-width: 991px) {
   header {
     position: absolute;
@@ -38,18 +38,51 @@
     width: 100%;
     z-index: 1001;
     background: transparent;
-    padding: 15px 0;
+    padding: 12px 0;
+    transform: none !important;
   }
 
+  /* Header Top: Toggle | Logo | Icons in one row */
   .header-top {
-      padding: 0 15px;
-      margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 0 15px;
+    margin-bottom: 0 !important;
+    min-height: 60px;
+  }
+
+  /* Hide the desktop navBar container by default on mobile */
+  .navBar-container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--white-color);
+    z-index: 9999;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    transition: all 0.35s ease;
+    display: block !important;
+    border-radius: 0;
+    overflow-y: auto;
+  }
+
+  .navBar-container.active {
+    left: 0;
   }
 
   .mobile-toggle {
-    display: block !important;
-    font-size: 24px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
     color: #000;
+    cursor: pointer;
+    flex-shrink: 0;
   }
 
   .logo {
@@ -57,71 +90,201 @@
     flex-grow: 1;
   }
 
-  .logo img {
-    max-width: 140px;
+  .logo a {
+    margin: 0 auto !important;
+    width: auto !important;
     display: inline-block;
   }
 
-  .navBar-container {
-    display: none !important;
+  .logo img {
+    max-width: 130px;
+    display: block;
   }
 
+  /* Icons - Right side */
   .header-icons-mobile {
-      display: block !important;
+    display: flex !important;
+    align-items: center;
+    flex-shrink: 0;
   }
 
-  .icons a {
-    font-size: 20px;
-    margin-left: 12px;
+  .header-icons-mobile .icons {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .header-icons-mobile .icons a {
+    font-size: 18px;
     color: #000;
+    margin-left: 8px;
+    display: inline-block;
+  }
+
+  .header-icons-mobile .icons a i {
+    font-size: 20px;
+  }
+
+  /* Nav list in sidebar */
+  .navBar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 60px;
+    padding: 0;
+  }
+
+  .navBar ul li {
+    width: 100%;
+  }
+
+  .navBar ul li a {
+    padding: 12px 15px;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* Dropdown in mobile sidebar */
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    padding-left: 15px;
+    display: none;
+    margin-top: 5px;
+    border-top: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown.active .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+
+  /* Close Button inside sidebar */
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    display: none;
+  }
+
+  .menu-overlay.active {
+    display: block;
   }
 
   /* Slider / Banner Content Positioning for mobile */
   .slide-content {
-      left: 10% !important;
-      top: 45% !important;
-      transform: translateY(-50%) !important;
-      text-align: left !important;
+    left: 5% !important;
+    top: 45% !important;
+    transform: translateY(-50%) !important;
+    text-align: left !important;
   }
 
   .slide-content h3 {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .slide-content h4 {
-    font-size: 28px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 6px;
   }
 
   .Content-img img {
-    height: 500px;
+    height: 420px;
     width: 100%;
     object-fit: cover;
   }
 
-  /* Swiper Pagination Style */
+  /* Swiper Pagination */
   .swiper-pagination {
-      bottom: 25px !important;
+    bottom: 20px !important;
   }
 
   .swiper-pagination-bullet {
-      width: 12px;
-      height: 12px;
-      background: #000 !important;
-      opacity: 0.3;
-      margin: 0 5px !important;
+    width: 10px;
+    height: 10px;
+    background: #000 !important;
+    opacity: 0.3;
+    margin: 0 4px !important;
   }
 
   .swiper-pagination-bullet-active {
-      background: #000 !important;
-      opacity: 1;
+    background: #000 !important;
+    opacity: 1;
   }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-      display: none !important;
+
+  .Banner-sec .swiper-button-next,
+  .Banner-sec .swiper-button-prev {
+    display: none !important;
+  }
+
+  /* Feature Cards - NO scrollbar, clean swipe */
+  .card-sec {
+    overflow: hidden;
+  }
+
+  .card-sec .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 16px;
+    padding: 18px 15px 28px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    /* Push scrollbar track outside visible area */
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+  }
+
+  /* Hide webkit scrollbar track completely */
+  .card-sec .cards::-webkit-scrollbar,
+  .card-sec .cards::-webkit-scrollbar-track,
+  .card-sec .cards::-webkit-scrollbar-thumb {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+    -webkit-appearance: none !important;
+  }
+
+  .card-sec .money-card {
+    min-width: 75vw;
+    width: 75vw;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 20px 16px 16px;
+    text-align: center;
+    border-radius: 14px;
+  }
+
+  .card-sec h4 {
+    font-size: 28px;
+  }
+
+  .card-sec h2 {
+    font-size: 26px;
   }
 }
 
@@ -132,24 +295,24 @@
   }
 
   .slide-content {
-      top: 50% !important;
+    top: 48% !important;
   }
 
   .slide-content h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .slide-content h4 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .Content-img img {
-    height: 480px;
+    height: 400px;
   }
-  
+
   .btn-black {
-      padding: 8px 18px;
-      font-size: 14px;
+    padding: 8px 18px;
+    font-size: 14px;
   }
 }
 
@@ -159,29 +322,42 @@
     max-width: 110px;
   }
 
-  .icons a {
+  .header-icons-mobile .icons a {
+    margin-left: 6px;
+  }
+
+  .header-icons-mobile .icons a i {
     font-size: 18px;
-    margin-left: 8px;
   }
 
   .slide-content {
-      left: 5% !important;
+    left: 4% !important;
   }
 
   .slide-content h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 12px;
   }
 
   .slide-content h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
-  
+
   .slide-content a {
-      margin-top: 10px !important;
+    margin-top: 8px !important;
   }
-  
+
   .Content-img img {
-    height: 450px;
+    height: 380px;
   }
+
+  /* Cards: 1 per screen on tiny phones */
+  .card-sec .money-card {
+    min-width: 82vw;
+    width: 82vw;
+  }
+  .sales .cotent-image {
+    position: relative;
+    margin-bottom: 50px;
+}
 }
