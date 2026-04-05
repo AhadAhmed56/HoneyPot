@@ -391,6 +391,24 @@
     padding: 8px 20px;
     font-size: 12px;
   }
+
+  /* Footer mobile layout */
+  .footer-links, .fo-2, .footer-contact {
+    margin-bottom: 40px;
+  }
+  
+  .end-icons ul {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom-copy p {
+    margin-bottom: 20px;
+  }
+  
+  .iamge-footer-end {
+    text-align: center;
+  }
 }
 
 /* Adjust for Large Mobile (up to 767px) */
