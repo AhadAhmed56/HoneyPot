@@ -12,18 +12,18 @@
 /* Adjust for Laptop (up to 1199px) */
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
   .logo img {
-      width: 150px;
+    width: 150px;
   }
-  
+
   .navBar ul {
-      gap: 15px;
+    gap: 15px;
   }
 
   .slide-content h3 {
     font-size: 50px;
     margin-bottom: 30px;
   }
-  
+
   .slide-content h4 {
     font-size: 40px;
   }
@@ -62,7 +62,7 @@
     background: var(--white-color);
     z-index: 9999;
     padding: 30px 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     transition: all 0.35s ease;
     display: block !important;
     border-radius: 0;
@@ -270,21 +270,126 @@
   }
 
   .card-sec .money-card {
-    min-width: 75vw;
-    width: 75vw;
+    min-width: 260px;
+    width: 260px;
     flex-shrink: 0;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     padding: 20px 16px 16px;
     text-align: center;
     border-radius: 14px;
   }
 
-  .card-sec h4 {
+  .web-title h4 {
     font-size: 28px;
+    line-height: 1.5;
+    padding-top: 10px;
   }
 
-  .card-sec h2 {
+  .web-title h2 {
     font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  /* our-product section mobile reset */
+  .our-porduct {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .our-product-content-1,
+  .our-product-content-2,
+  .our-product-content-3,
+  .our-product-content-4 {
+    margin: 40px auto 0 !important;
+  }
+
+  /* About section mobile reset */
+  .about-content {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .about-content .l-r-content {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .about-content .l-r-content .l-content {
+    width: 100%;
+  }
+
+  /* Testimonials mobile reset */
+  .testimonials-card {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    margin: 10px 5px 0;
+  }
+
+  .testimonials-card .image {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .testimonials-card .content {
+    margin: 0;
+  }
+
+  .testimonials-card .content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Logos mobile layout */
+  .logos-sec {
+    /* padding: 40px 0 !important; */
+  }
+
+  .logos-sec .image {
+    /* text-align: center; */
+  }
+
+  /* Make icons visible since mobile lacks hover */
+  .product-content .icons {
+    right: 10px;
+  }
+
+  .product-content .content a h4 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .product-content .content h5 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .product-content .btn-main {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+
+  .sales .cotent-image .content {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+  }
+
+  .sales .cotent-image .content h4 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .sales .cotent-image .content h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .sales .cotent-image .content a {
+    padding: 8px 20px;
+    font-size: 12px;
   }
 }
 
@@ -353,11 +458,50 @@
 
   /* Cards: 1 per screen on tiny phones */
   .card-sec .money-card {
-    min-width: 82vw;
-    width: 82vw;
+    min-width: 250px;
+    width: 250px;
+    scroll-snap-align: center;
   }
+
   .sales .cotent-image {
     position: relative;
-    margin-bottom: 50px;
-}
+    margin-bottom: 20px;
+  }
+
+  .sales .cotent-image .content {
+    left: 15px;
+  }
+
+  .sales .cotent-image .content h4 {
+    font-size: 22px;
+  }
+
+  .sales .cotent-image .content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .sales .cotent-image .content a {
+    padding: 6px 15px;
+    font-size: 11px;
+  }
+
+  /* Contact section mobile layout */
+  .contact-box {
+    padding: 0 15px;
+  }
+  
+  .contact-box h3 {
+    font-size: 26px;
+  }
+  
+  .form-sec {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-sec .btn-black {
+    width: 100%;
+  }
 }

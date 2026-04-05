@@ -60,6 +60,8 @@ a {
   font-weight: 400;
   font-family: 'Great Vibes';
   margin-bottom: 10px;
+  line-height: 1.4;
+  padding-top: 10px;
 }
 
 .web-title h2 {
@@ -67,6 +69,7 @@ a {
   color: var(--black-color);
   font-weight: 700;
   font-family: 'Nunito';
+  margin-bottom: 30px;
 }
 li{
   list-style: none;
