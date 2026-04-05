@@ -9,7 +9,7 @@
   }
 }
 
-/* Adjust for Laptop (up to 1199px) */
+/* Adjust for Laptop (up to 1199px) yes  */
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
   .logo img {
     width: 150px;
@@ -393,19 +393,21 @@
   }
 
   /* Footer mobile layout */
-  .footer-links, .fo-2, .footer-contact {
+  .footer-links,
+  .fo-2,
+  .footer-contact {
     margin-bottom: 40px;
   }
-  
+
   .end-icons ul {
     justify-content: center;
     margin-bottom: 20px;
   }
-  
+
   .footer-bottom-copy p {
     margin-bottom: 20px;
   }
-  
+
   .iamge-footer-end {
     text-align: center;
   }
@@ -509,16 +511,16 @@
   .contact-box {
     padding: 0 15px;
   }
-  
+
   .contact-box h3 {
     font-size: 26px;
   }
-  
+
   .form-sec {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .form-sec .btn-black {
     width: 100%;
   }
