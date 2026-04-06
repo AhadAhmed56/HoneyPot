@@ -111,7 +111,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    width: 280px;
+    width: 880px;
     height: 100vh;
     background: var(--white-color);
     z-index: 9999;
@@ -139,7 +139,8 @@
     flex-shrink: 0;
   }
 
-  .logo {    text-align: center;
+  .logo {
+    text-align: center;
     flex-grow: 1;
   }
 
@@ -200,17 +201,17 @@
 
   /* Dropdown in mobile sidebar */
   .dropdown-menu {
-    position: static;
-    opacity: 1 !important;
-    visibility: visible !important;
+    position: static !important;
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
     transform: none !important;
     box-shadow: none;
     padding: 0 0 10px 20px !important;
-    display: none;
     margin: 0 !important;
     border: none;
     background: transparent;
-    width: 100%;
+    width: 100% !important;
   }
 
   .dropdown-menu li {
@@ -225,17 +226,23 @@
     font-size: 15px !important;
   }
 
-  .dropdown.active .dropdown-menu {
-    display: block;
+  .dropdown.active>.dropdown-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .nav-item.dropdown .fa-chevron-down {
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown.active>a .fa-chevron-down {
+    transform: rotate(180deg);
   }
 
   /* Hide desktop icons inside the sidebar for all tablet/mobile sizes */
   .header-icons-desktop {
     display: none !important;
-  }
-
-  .dropdown.active .fa-chevron-down {
-    transform: rotate(180deg);
   }
 
   /* Close Button inside sidebar */
@@ -313,7 +320,8 @@
 
   .slick-dots {
     list-style: none;
-    margin-top: 15px; /* Spacing if relative */
+    margin-top: 15px;
+    /* Spacing if relative */
   }
 
   .slick-dots li {
@@ -336,11 +344,12 @@
     display: inline-block !important;
     font-size: 0 !important;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .slick-dots li button::before {
-    display: none !important; /* Hide default icon */
+    display: none !important;
+    /* Hide default icon */
   }
 
   .swiper-pagination-bullet-active,
@@ -556,6 +565,72 @@
     padding: 8px 18px;
     font-size: 14px;
   }
+
+  /* About Page - Large Mobile */
+  .Banner-sec-about {
+    height: 250px;
+  }
+
+  .Banner-sec-about .breadcrumb-about h4 {
+    font-size: 28px;
+  }
+
+  .tabsec .nav-tabs {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .tabsec .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-main {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  .grid-item.one,
+  .grid-item.two,
+  .grid-item.three,
+  .grid-item.four {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  .accordin-sec .content h4 {
+    font-size: 26px;
+  }
+
+  .counter-sec {
+    padding: 60px 0px;
+  }
+
+  .counter h2 {
+    font-size: 36px;
+  }
+
+  .end-content h4 {
+    font-size: 24px;
+  }
+
+  .accordion-button {
+    font-size: 16px !important;
+    padding: 16px 16px 16px 50px !important;
+  }
+
+  .accordion-button::after {
+    left: 10px !important;
+    height: 28px !important;
+    width: 28px !important;
+    font-size: 14px !important;
+  }
+
+  .accordion-body {
+    padding: 10px 15px 20px 50px !important;
+  }
 }
 
 /* Adjust for Small Mobile (up to 575px) */
@@ -640,5 +715,30 @@
 
   .form-sec .btn-black {
     width: 100%;
+  }
+
+  /* About Page - Small Mobile */
+  .Banner-sec-about {
+    height: 200px;
+  }
+
+  .Banner-sec-about .breadcrumb-about h4 {
+    font-size: 24px;
+  }
+
+  .accordin-sec .content h4 {
+    font-size: 22px;
+  }
+
+  .simple-card .card {
+    padding: 25px 15px;
+  }
+
+  .counter h2 {
+    font-size: 30px;
+  }
+
+  .counter p {
+    font-size: 16px;
   }
 }
