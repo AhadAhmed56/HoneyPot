@@ -50,6 +50,18 @@
                     </div>
                 </div>
 
+                <!-- Icons (Desktop Only - Hidden in sidebar via CSS) -->
+                <div class="col-lg-4 d-none d-lg-flex justify-content-end header-icons-desktop">
+                    <div class="icons d-flex align-items-center">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="far fa-user"></i></a>
+                        <a href="#" class="cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Header Nav Bar -->
@@ -80,27 +92,7 @@
                             </ul>
                         </nav>
                     </div>
-
-                    <!-- ICONS (Desktop Only) -->
-                    <div class="col-lg-4 d-none d-lg-flex justify-content-end">
-                        <div class="icons d-flex align-items-center">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                            <a href="#"><i class="far fa-user"></i></a>
-                            <a href="#" class="cart-icon">
-                                <i class="fas fa-shopping-bag"></i>
-                                <span class="cart-count">0</span>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-
-
-            <div class="menu-toggle">
-    <i class="fas fa-bars"></i>
-</div>
-</div>
             </div>
 
     </header>
@@ -300,7 +292,7 @@
     <section class="sales sec-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-md-6 col-lg-6 mb-4 mb-md-0">
                     <div class="cotent-image">
                         <div class="image">
                             <a href="javascripts:void(0)">
@@ -319,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6 col-lg-6">
                     <div class="cotent-image">
                         <div class="image">
                             <a href="javascripts:void(0)">
@@ -652,12 +644,12 @@
     <section class="about sec-padding">
         <div class="container gx-0">
             <div class="row gx-0">
-                <div class="col-lg-6 gx-0">
+                <div class="col-lg-6 gx-0 mb-4 mb-lg-0">
                     <div class="image">
                         <img src="/assets/images/about-img-1.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="about-content">
                         <div class="content web-title">
                             <h4>About Us</h4>
@@ -990,7 +982,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
                             <img src="/assets/images/blog-1.jpg" alt="">
@@ -1003,7 +995,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
                             <img src="/assets/images/blog-2.jpg" alt="">
@@ -1016,7 +1008,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
                             <img src="/assets/images/blog-3.jpg" alt="">
@@ -1281,6 +1273,16 @@
                     }
                 },
                 {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        arrows: false
+                    }
+                },
+                {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 2,
@@ -1320,6 +1322,16 @@
                         dots: true
                     }
                 },
+                       {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        arrows: false
+                    }
+                },
                 {
                     breakpoint: 600,
                     settings: {
@@ -1355,6 +1367,16 @@
                         slidesToScroll: 3,
                         infinite: true,
                         dots: true
+                    }
+                },
+                       {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
@@ -1393,30 +1415,18 @@
 
         // Dropdown toggle for mobile
         $('.nav-item.dropdown > a').on('click', function(e) {
-            if ($(window).width() <= 991) {
+            if ($(window).width() <= 1024) {
                 e.preventDefault();
-                $(this).parent().toggleClass('active');
+                e.stopPropagation();
+                var parent = $(this).parent();
+                
+                // Close other dropdowns if any (optional but good)
+                $('.nav-item.dropdown').not(parent).removeClass('active');
+                
+                parent.toggleClass('active');
             }
         });
 
-  const toggleBtn = document.querySelector(".menu-toggle");
-  const navBar = document.querySelector(".navBar");
-
-  toggleBtn.onclick = () => {
-    navBar.classList.toggle("active");
-  };
-
-  // Dropdown for mobile
-  const dropdowns = document.querySelectorAll(".dropdown");
-
-  dropdowns.forEach(drop => {
-    drop.addEventListener("click", function(e) {
-      if (window.innerWidth < 991) {
-        e.preventDefault();
-        this.classList.toggle("active");
-      }
-    });
-  });
 
     </script>
 </body>

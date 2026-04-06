@@ -75,8 +75,8 @@
                         </nav>
                     </div>
 
-                    
-                    <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+                    <!-- Icons (Desktop Only - Hidden in sidebar via CSS) -->
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-end header-icons-desktop">
                         <div class="icons d-flex align-items-center">
                             <a href="#"><i class="fas fa-search"></i></a>
                             <a href="#"><i class="far fa-user"></i></a>
@@ -612,9 +612,15 @@
 
         // Dropdown toggle for mobile
         $('.nav-item.dropdown > a').on('click', function (e) {
-            if ($(window).width() <= 991) {
+            if ($(window).width() <= 1024) {
                 e.preventDefault();
-                $(this).parent().toggleClass('active');
+                e.stopPropagation();
+                var parent = $(this).parent();
+
+                // Close other dropdowns if any
+                $('.nav-item.dropdown').not(parent).removeClass('active');
+
+                parent.toggleClass('active');
             }
         });
     </script>
