@@ -54,6 +54,7 @@ img {
     background-image: url(../images/about-breadcumb-bkg.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .Banner-sec-about .breadcrumb-about {
