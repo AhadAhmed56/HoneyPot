@@ -24,34 +24,26 @@
             <!-- Mobile Header: Toggle | Logo | Icons -->
             <div class="row">
             <!-- Header Top: Logo and Icon -->
-            <div class="header-top d-flex align-items-center justify-content-between position-relative">
+            <div class="header-top d-flex align-items-center justify-content-center position-relative">
 
                 <!-- Toggle Button (Mobile Left) -->
                 <div class="mobile-toggle d-lg-none">
                     <span>&#9776;</span>
                 </div>
-
-                <!-- Logo (Center on Mobile) -->
+                <!-- Logo (Centered) -->
                 <div class="logo">
                     <a href="index.html">
                         <img src="assets/images/logo.svg" alt="Honeypot">
                     </a>
                 </div>
 
-                <!-- Icons (Mobile Right) -->
-                <div class="header-icons-mobile d-lg-none">
-                    <div class="icons d-flex align-items-center">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                        <a href="#"><i class="far fa-user"></i></a>
-                        <a href="#" class="cart-icon">
-                            <i class="fas fa-shopping-bag"></i>
-                            <span class="cart-count">0</span>
-                        </a>
-                    </div>
+                <!-- Bee Icon (Desktop Only) -->
+                <div class="header-icon d-none d-lg-block">
+                    <img src="assets/images/header-icon.png" alt="Bee Icon">
                 </div>
 
-                <!-- Icons (Desktop Only - Hidden in sidebar via CSS) -->
-                <div class="col-lg-4 d-none d-lg-flex justify-content-end header-icons-desktop">
+                <!-- Icons (Mobile Right) -->
+                <div class="header-icons-mobile d-lg-none">
                     <div class="icons d-flex align-items-center">
                         <a href="#"><i class="fas fa-search"></i></a>
                         <a href="#"><i class="far fa-user"></i></a>
@@ -71,7 +63,7 @@
                 </div>
                 <div class="row align-items-center">
                     <!-- NAV -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-12 d-flex align-items-center justify-content-between">
                         <nav class="navBar">
                             <ul class="mb-0">
                                 <li class="nav-item"><a class="active" href="#">Home</a></li>
@@ -91,6 +83,17 @@
                                 <li class="nav-item"><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </nav>
+                        <!-- Icons (Desktop Only) -->
+                        <div class="header-icons-desktop d-none d-lg-block">
+                            <div class="icons d-flex align-items-center">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                                <a href="#"><i class="far fa-user"></i></a>
+                                <a href="#" class="cart-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span class="cart-count">0</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,7 +299,7 @@
                     <div class="cotent-image">
                         <div class="image">
                             <a href="javascripts:void(0)">
-                                <img src="/assets/images/sub-banner-1.jpg" alt="sales-image">
+                                <img src="assets/images/sub-banner-1.jpg" alt="sales-image">
                             </a>
                         </div>
                         <div class="content">
@@ -315,7 +318,7 @@
                     <div class="cotent-image">
                         <div class="image">
                             <a href="javascripts:void(0)">
-                                <img src="/assets/images/sub-banner-2.jpg" alt="sales-image">
+                                <img src="assets/images/sub-banner-2.jpg" alt="sales-image">
                             </a>
                         </div>
                         <div class="content">
@@ -349,8 +352,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/05-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/05-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/06-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -391,8 +394,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/02-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/05-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/02-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/05-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -433,8 +436,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/01-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/04-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/01-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/04-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -475,8 +478,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/04-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/03-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/04-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/03-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -517,8 +520,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/03-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/03-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/06-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -646,7 +649,7 @@
             <div class="row gx-0">
                 <div class="col-lg-6 gx-0 mb-4 mb-lg-0">
                     <div class="image">
-                        <img src="/assets/images/about-img-1.jpg" alt="">
+                        <img src="assets/images/about-img-1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 mb-4 mb-lg-0">
@@ -691,8 +694,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/05-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/05-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/06-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -733,8 +736,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/02-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/05-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/02-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/05-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -775,8 +778,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/01-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/04-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/01-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/04-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -817,8 +820,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/04-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/03-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/04-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/03-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -859,8 +862,8 @@
                 <div class="col-lg-3">
                     <div class="product-content">
                         <div class="image">
-                            <img src="/assets/images/03-1-460x460.jpg" class="img-main">
-                            <img src="/assets/images/06-1-460x460.jpg" class="img-hover">
+                            <img src="assets/images/03-1-460x460.jpg" class="img-main">
+                            <img src="assets/images/06-1-460x460.jpg" class="img-hover">
                         </div>
 
                         <div class="content">
@@ -916,7 +919,7 @@
                 <div class="col-lg-6">
                     <div class="testimonials-card">
                         <div class="image">
-                            <img src="/assets/images/author-1.png" alt="">
+                            <img src="assets/images/author-1.png" alt="">
                         </div>
                         <div class="content">
                             <h3>“Excellent product, A+ customer service.” </h3>
@@ -929,7 +932,7 @@
                 <div class="col-lg-6">
                     <div class="testimonials-card">
                         <div class="image">
-                            <img src="/assets/images/author-2.png" alt="">
+                            <img src="assets/images/author-2.png" alt="">
                         </div>
                         <div class="content">
                             <h3>“Excellent product, A+ customer service.” </h3>
@@ -942,7 +945,7 @@
                 <div class="col-lg-6">
                     <div class="testimonials-card">
                         <div class="image">
-                            <img src="/assets/images/author-3.png" alt="">
+                            <img src="assets/images/author-3.png" alt="">
                         </div>
                         <div class="content">
                             <h3>“Excellent product, A+ customer service.” </h3>
@@ -955,7 +958,7 @@
                 <div class="col-lg-6">
                     <div class="testimonials-card">
                         <div class="image">
-                            <img src="/assets/images/author-4.png" alt="">
+                            <img src="assets/images/author-4.png" alt="">
                         </div>
                         <div class="content">
                             <h3>“Excellent product, A+ customer service.” </h3>
@@ -985,7 +988,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
-                            <img src="/assets/images/blog-1.jpg" alt="">
+                            <img src="assets/images/blog-1.jpg" alt="">
                         </div>
                         <div class="content">
                             <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
@@ -998,7 +1001,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
-                            <img src="/assets/images/blog-2.jpg" alt="">
+                            <img src="assets/images/blog-2.jpg" alt="">
                         </div>
                         <div class="content">
                             <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
@@ -1011,7 +1014,7 @@
                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <div class="blog-content-img">
                         <div class="image">
-                            <img src="/assets/images/blog-3.jpg" alt="">
+                            <img src="assets/images/blog-3.jpg" alt="">
                         </div>
                         <div class="content">
                             <a href="#">FEBRUARY 9, 2025 . BY EDITOR</a>
@@ -1032,28 +1035,28 @@
             <div class="row">
                 <div class="logos-sec">
                     <div class="image">
-                        <img src="/assets/images/logos-1.png" alt="">
+                        <img src="assets/images/logos-1.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-2.png" alt="">
+                        <img src="assets/images/logos-2.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-3.png" alt="">
+                        <img src="assets/images/logos-3.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-4.png" alt="">
+                        <img src="assets/images/logos-4.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-1.png" alt="">
+                        <img src="assets/images/logos-1.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-3.png" alt="">
+                        <img src="assets/images/logos-3.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-1.png" alt="">
+                        <img src="assets/images/logos-1.png" alt="">
                     </div>
                     <div class="image">
-                        <img src="/assets/images/logos-2.png" alt="">
+                        <img src="assets/images/logos-2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -1091,10 +1094,10 @@
                             and innovation. </p>
                         <div class="footer-icons">
                             <div class="image">
-                                <img src="/assets/images/app-img.png" alt="">
+                                <img src="assets/images/app-img.png" alt="">
                             </div>
                             <div class="image">
-                                <img src="/assets/images/google-img.png" alt="">
+                                <img src="assets/images/google-img.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1213,7 +1216,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="iamge-footer-end">
-                            <img src="/assets/images/payment-img.png" alt="">
+                            <img src="assets/images/payment-img.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -1397,9 +1400,6 @@
                         dots: true
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
 
@@ -1413,14 +1413,12 @@
             $('.menu-overlay').removeClass('active');
         });
 
-        // Dropdown toggle for mobile
         $('.nav-item.dropdown > a').on('click', function(e) {
             if ($(window).width() <= 1024) {
                 e.preventDefault();
                 e.stopPropagation();
                 var parent = $(this).parent();
                 
-                // Close other dropdowns if any (optional but good)
                 $('.nav-item.dropdown').not(parent).removeClass('active');
                 
                 parent.toggleClass('active');

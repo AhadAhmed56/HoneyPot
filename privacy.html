@@ -11,10 +11,10 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="/assets/css/privacy.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/privacy.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>HoneyPot</title>
 </head>
 
@@ -23,18 +23,21 @@
     <header>
         <div class="container">
             <!-- Header Top: Logo and Icon -->
-            <div class="header-top d-flex align-items-center justify-content-between position-relative">
+            <div class="header-top d-flex align-items-center justify-content-center position-relative">
                 <div class="mobile-toggle d-lg-none">
                     <i class="fas fa-bars"></i>
                 </div>
+                <!-- Logo (Centered) -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/images/logo.svg" alt="">
+                        <img src="assets/images/logo.svg" alt="">
                     </a>
                 </div>
+                <!-- Bee Icon (Desktop Only) -->
                 <div class="header-icon d-none d-lg-block">
-                    <img src="/assets/images/header-icon.png" alt="Bee Icon">
+                    <img src="assets/images/header-icon.png" alt="Bee Icon">
                 </div>
+                <!-- Icons (Mobile Right) -->
                 <div class="header-icons-mobile d-lg-none">
                     <div class="icons d-flex align-items-center">
                         <a href="#"><i class="fas fa-search"></i></a>
@@ -54,7 +57,7 @@
                 </div>
                 <div class="row align-items-center">
                     <!-- NAV -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-12 d-flex align-items-center justify-content-between">
                         <nav class="navBar">
                             <ul class="mb-0">
                                 <li class="nav-item"><a href="index.html">Home</a></li>
@@ -68,23 +71,22 @@
                                         <li><a href="#">Farming Honey</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a href="/about.html">About</a></li>
-                                <li class="nav-item"><a href="/contact.html">Contact</a></li>
-                                <li class="nav-item"><a href="/faqs.html">FAQ</a></li>
+                                <li class="nav-item"><a href="about.html">About</a></li>
+                                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a href="faqs.html">FAQ</a></li>
                                 <li class="nav-item"><a href="privacy.html" class="active">Privacy Policy</a></li>
                             </ul>
                         </nav>
-                    </div>
-
-                    <!-- ICONS (Desktop Only) -->
-                    <div class="col-lg-4 d-none d-lg-flex justify-content-end">
-                        <div class="icons d-flex align-items-center">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                            <a href="#"><i class="far fa-user"></i></a>
-                            <a href="#" class="cart-icon">
-                                <i class="fas fa-shopping-bag"></i>
-                                <span class="cart-count">0</span>
-                            </a>
+                        <!-- Icons (Desktop Only) -->
+                        <div class="header-icons-desktop d-none d-lg-block">
+                            <div class="icons d-flex align-items-center">
+                                <a href="#"><i class="fas fa-search"></i></a>
+                                <a href="#"><i class="far fa-user"></i></a>
+                                <a href="#" class="cart-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span class="cart-count">0</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,10 +200,10 @@
                             and innovation. </p>
                         <div class="footer-icons">
                             <div class="image">
-                                <img src="/assets/images/app-img.png" alt="">
+                                <img src="assets/images/app-img.png" alt="">
                             </div>
                             <div class="image">
-                                <img src="/assets/images/google-img.png" alt="">
+                                <img src="assets/images/google-img.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -320,7 +322,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="iamge-footer-end">
-                            <img src="/assets/images/payment-img.png" alt="">
+                            <img src="assets/images/payment-img.png" alt="">
                         </div>
                     </div>
                 </div>

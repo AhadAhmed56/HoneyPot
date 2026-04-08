@@ -110,21 +110,23 @@
   .navBar-container {
     position: fixed;
     top: 0;
-    left: -100%;
-    width: 880px;
+    left: 0;
+    width: 300px;
+    max-width: 80%;
     height: 100vh;
     background: var(--white-color);
     z-index: 9999;
     padding: 30px 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.35s ease;
+    transition: transform 0.35s ease-in-out;
     display: block !important;
     border-radius: 0;
     overflow-y: auto;
+    transform: translateX(-100%);
   }
 
   .navBar-container.active {
-    left: 0;
+    transform: translateX(0);
   }
 
   .mobile-toggle {
@@ -290,25 +292,22 @@
     transform: translateY(-50%) !important;
     text-align: left !important;
   }
-
   .slide-content h3 {
     font-size: 32px;
     line-height: 1.2;
     margin-bottom: 15px;
   }
-
   .slide-content h4 {
     font-size: 24px;
     margin-bottom: 6px;
   }
-
   .Content-img img {
     height: 600px;
     width: 100%;
     object-fit: cover;
   }
 
-  /* Swiper & Slick Pagination Dots */
+  
   .swiper-pagination,
   .slick-dots {
     bottom: 20px !important;
@@ -741,4 +740,7 @@
   .counter p {
     font-size: 16px;
   }
+    .iamge-footer-end {
+        text-align: center;
+    }
 }

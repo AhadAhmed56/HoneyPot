@@ -183,9 +183,9 @@ header {
 
 .navBar ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
 
 .navBar ul li {
@@ -203,9 +203,9 @@ header {
 }
 .navBar ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
 
 .navBar ul li {
