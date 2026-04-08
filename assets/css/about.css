@@ -187,7 +187,6 @@ section.grid-sec {
 /* accordion */
 section.accordion-sec {
     background-color: #F2F2F2;
-    padding: 80px 0px;
     overflow: hidden;
 }
 
@@ -327,8 +326,6 @@ section.accordion-sec {
         transform: translateY(0);
     }
 }
-
-/* card content */
 .simple-card .card-title a {
     font-size: 20px;
     font-weight: 600;
@@ -374,8 +371,9 @@ section.accordion-sec {
 
 /* .end-about */
 section.end-sec {
-    padding: 75px 0px;
+    padding: 30pxpx 0px;
 }
+
 
 .end-content {
     text-align: center;
