@@ -752,7 +752,7 @@ transform: translateY(-8px);
 /* our-product */
 
 .our-porduct {
-  background-image: url(/assets/images/why-choose-1.jpg);
+  background-image: url(../images/why-choose-1.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -851,7 +851,7 @@ transform: translateY(-8px);
 
 /* Testimonials */
 .Testimonials {
-  background-image: url(/assets/images/testimonal-img.jpg);
+  background-image: url(../images/testimonal-img.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -956,7 +956,7 @@ transform: translateY(-8px);
 /* contact */
 .contact {
   padding: 80px 0px;
-  background-image: url(/assets/images/footer-bkg-img.jpg);
+  background-image: url(../images/footer-bkg-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }

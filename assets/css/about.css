@@ -51,7 +51,7 @@ img {
 
 .Banner-sec-about {
     height: 400px;
-    background-image: url(/assets/images/about-breadcumb-bkg.jpg);
+    background-image: url(../images/about-breadcumb-bkg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -348,7 +348,7 @@ section.accordion-sec {
 /* COUNTER */
 .counter-sec {
     padding: 95px 0px;
-    background-image: url(/assets/images/about-parallax.jpg);
+    background-image: url(../images/about-parallax.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
