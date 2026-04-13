@@ -97,6 +97,11 @@ section.card-sec {
 section.product {
     padding-bottom: 80px;
 }
+.swiper-pagination-bullet-active
+ {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--primary-color);
+ }
 /* Universal Buttons */
 .btn-main {
   background-color: var(--primary-color);
@@ -234,7 +239,7 @@ header {
   top: 100%;
   background: var(--white-color);
   min-width: 220px;
-  display: block;
+  display: none;
   opacity: 0;
   visibility: hidden;
   flex-direction: column;
@@ -244,7 +249,7 @@ header {
   border-top: 4px solid var(--primary-color);
   transition: all 0.3s ease;
   transform: translateY(15px);
-  z-index: 1001; 
+  z-index: 1001;
   color: var(--black-color);
 }
 
@@ -259,6 +264,7 @@ header {
 }
 
 .dropdown:hover .dropdown-menu {
+  display: block;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -278,18 +284,18 @@ header {
 }
 
 .dropdown-menu li a {
-  padding: 10px 25px !important;
-  border-radius: 0 !important;
-  font-weight: 500 !important;
-  color: var(--text-color) !important;
-  background: transparent !important;
+  padding: 10px 25px;
+  border-radius: 0;
+  font-weight: 500;
+  color: var(--text-color);
+  background: transparent;
   transition: all 0.2s ease;
   margin: 0;
 }
 
 .dropdown-menu li a:hover {
-  color: var(--primary-color) !important;
-  padding-left: 30px !important;
+  color: var(--primary-color);
+  padding-left: 30px;
   margin: 0;
 }
 
@@ -312,7 +318,7 @@ header {
     position: absolute;
     top: -8px;
     right: -10px;
-    background-color: #ffcc00; /* yellow like your theme */
+    background-color: #ffcc00; 
     color: #000;
     font-size: 12px;
     font-weight: 600;
@@ -709,6 +715,9 @@ transform: translateY(-8px);
   font-size: 15px;
   color: var(--black-color);
 }
+.product-content .icons a:hover {
+    background: var(--primary-color);
+  }
 
 /* slider-product */
 .slick-arrow {

@@ -21,28 +21,22 @@
         <!-- header -->
         <header>
             <div class="container ">
-                <!-- Mobile Header: Toggle | Logo | Icons -->
                 <div class="row">
-                    <!-- Header Top: Logo and Icon -->
                     <div class="header-top d-flex align-items-center justify-content-center position-relative">
 
-                        <!-- Toggle Button (Mobile Left) -->
                         <div class="mobile-toggle d-lg-none">
                             <span>&#9776;</span>
                         </div>
-                        <!-- Logo (Centered) -->
                         <div class="logo">
                             <a href="index.html">
                                 <img src="assets/images/logo.svg" alt="Honeypot">
                             </a>
                         </div>
 
-                        <!-- Bee Icon (Desktop Only) -->
                         <div class="header-icon d-none d-lg-block">
                             <img src="assets/images/header-icon.png" alt="Bee Icon">
                         </div>
 
-                        <!-- Icons (Mobile Right) -->
                         <div class="header-icons-mobile d-lg-none">
                             <div class="icons d-flex align-items-center">
                                 <a href="#"><i class="fas fa-search"></i></a>
@@ -56,13 +50,11 @@
 
                     </div>
 
-                    <!-- Header Nav Bar -->
                     <div class="navBar-container">
                         <div class="close-menu d-lg-none">
                             <i class="fas fa-times"></i>
                         </div>
                         <div class="row align-items-center">
-                            <!-- NAV -->
                             <div class="col-lg-12 d-flex align-items-center justify-content-between">
                                 <nav class="navBar">
                                     <ul class="mb-0">
@@ -1264,7 +1256,7 @@
 
 
         $('.responsives').slick({
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
@@ -1314,7 +1306,7 @@
         });
 
         $('.res-testimonials').slick({
-            dots: true,
+            dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 2,
@@ -1417,12 +1409,13 @@
         $('.close-menu, .menu-overlay').on('click', function () {
             $('.navBar-container').removeClass('active');
             $('.menu-overlay').removeClass('active');
+            $('.nav-item.dropdown').removeClass('active'); // fix
         });
 
         $('.nav-item.dropdown > a').on('click', function (e) {
             if ($(window).width() <= 1024) {
                 e.preventDefault();
-                e.stopPropagation();
+
                 var parent = $(this).parent();
 
                 $('.nav-item.dropdown').not(parent).removeClass('active');
