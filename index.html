@@ -39,7 +39,8 @@
 
                         <div class="header-icons-mobile d-lg-none">
                             <div class="icons d-flex align-items-center">
-                                <a href="#"><i class="fas fa-search"></i></a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                        class="fas fa-search"></i></a>
                                 <a href="#"><i class="far fa-user"></i></a>
                                 <a href="#" class="cart-icon">
                                     <i class="fas fa-shopping-bag"></i>
@@ -78,8 +79,10 @@
                                 <!-- Icons (Desktop Only) -->
                                 <div class="header-icons-desktop d-none d-lg-block">
                                     <div class="icons d-flex align-items-center">
-                                        <a href="#"><i class="fas fa-search"></i></a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                                class="fas fa-search"></i></a>
                                         <a href="#"><i class="far fa-user"></i></a>
+
                                         <a href="#" class="cart-icon">
                                             <i class="fas fa-shopping-bag"></i>
                                             <span class="cart-count">0</span>
@@ -1103,22 +1106,22 @@
                         <div class="footer-links">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Home</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">About</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Services</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Faq</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Who We Are</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Make a Booking</a>
                                 </li>
                             </ul>
@@ -1128,22 +1131,22 @@
                         <div class="footer-links">
                             <h3>Your Account </h3>
                             <ul>
-                                <li>
+                                <li class="underline">
                                     <a href="index.html">Home</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="about.html">About</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Services</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="faqs.html">Faq</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Who We Are</a>
                                 </li>
-                                <li>
+                                <li class="underline">
                                     <a href="#">Make a Booking</a>
                                 </li>
                             </ul>
@@ -1153,34 +1156,50 @@
                     <div class="col-lg-3">
                         <div class="footer-contact  ">
                             <h3>Contact</h3>
+                            <ul>
+                                <li class="underline">
+                                    <div class="contact-links">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <h4>60 29th Street San Francisco, 507-Union Trade Center, United States America
+                                            - 94110
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="underline">
+                                    <div class="contact-links">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-tty"></i>
+                                        </div>
+                                        <h4>
+                                            <a href="#">(+91) 9876-543-210</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="underline">  
+                                    <div class="contact-links">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-mobile-screen-button"></i>
+                                        </div>
+                                         <h4>
+                                            <a href="#">(+91) 9876-543-210</a>
+                                        </h4>
+                                    </div>
+                                </li>
 
-                            <div class="contact-links">
-                                <div class="icons">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <h4>60 29th Street San Francisco, 507-Union Trade Center, United States America - 94110
-                                </h4>
-                            </div>
-                            <div class="contact-links">
-                                <div class="icons">
-                                    <i class="fa-solid fa-tty"></i>
-                                </div>
-                                <h4>(+91)-012-345-6789</h4>
-                            </div>
-                            <div class="contact-links">
-                                <div class="icons">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                </div>
-                                <h4>(+91) 9876-543-210</h4>
-                            </div>
-                            <div class="contact-links">
-                                <div class="icons">
-                                    <i class="fa-regular fa-envelope"></i>
-                                </div>
-                                <h4>support@demo.com</h4>
-                            </div>
+                                <li class="underline">
+                                    <div class="contact-links ">
+                                        <div class="icons">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <h4>
+                                            <a href="#">support@demo.com</a>
+                                        </h4>
+                                    </div>
+                                </li>
                         </div>
-
+                        </ul>
                     </div>
 
                 </div>
@@ -1208,8 +1227,10 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="footer-bottom-copy">
-                                <p>© 2026 Honeypot Demo - WordPress Theme by <span><a href="#">Avanam</a></span></p>
+                            <div class="">
+                                <div class="footer-bottom-copy ">
+                                    <p>© 2026 Honeypot Demo - WordPress Theme by <span><a href="#">Avanam</a></span></p>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -1224,6 +1245,26 @@
         <!-- footer end -->
 
         <div class="menu-overlay"></div>
+
+        <!-- Search Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <input type="search" class="form-control" placeholder="Type your search..."
+                                    aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1252,6 +1293,7 @@
                 delay: 5000,
                 disableOnInteraction: false,
             },
+           
         });
 
 
@@ -1310,7 +1352,7 @@
             infinite: false,
             speed: 300,
             slidesToShow: 2,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
             nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i></div>',
             responsive: [

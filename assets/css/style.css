@@ -41,9 +41,10 @@ p {
   font-size: 15px;
   color: var(--muted-text);
 }
+
 .wrapper {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 a {
@@ -71,37 +72,67 @@ a {
   font-family: 'Nunito';
   margin-bottom: 30px;
 }
-li{
+
+li {
   list-style: none;
   display: inline-block;
 }
+
 button {
   border: none;
   cursor: pointer;
-  display:  inline-block;
+  display: inline-block;
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
 .menu-toggle {
-    display: none;
+  display: none;
 }
+
 .sec-padding {
-  padding: 80px 0 0px 0px ;
+  padding: 80px 0 0px 0px;
 }
+
 section.card-sec {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
+
 section.product {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
-.swiper-pagination-bullet-active
- {
-    opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: var(--primary-color);
- }
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--primary-color);
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* bottom: -4px; */
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* Universal Buttons */
 .btn-main {
   background-color: var(--primary-color);
@@ -116,10 +147,12 @@ section.product {
   color: var(--black-color);
   text-decoration: none;
 }
+
 .btn-main:hover {
   background-color: var(--black-color);
   color: var(--white-color);
 }
+
 .btn-black {
   background-color: var(--black-color);
   padding: 10px 25px;
@@ -133,14 +166,17 @@ section.product {
   color: var(--white-color) !important;
   text-decoration: none;
 }
+
 .btn-black:hover {
   background-color: var(--primary-color);
   color: var(--black-color) !important;
 }
-.btn-hover:hover{
+
+.btn-hover:hover {
   background-color: var(--footer-dark) !important;
   color: var(--white-color) !important;
 }
+
 header {
   position: absolute;
   top: 0;
@@ -206,6 +242,7 @@ header {
   transition: all 0.3s ease;
   display: block;
 }
+
 .navBar ul {
   display: flex;
   justify-content: flex-start;
@@ -232,6 +269,11 @@ header {
   background-color: var(--primary-color);
 }
 
+ .dropdown-menu {
+    margin: 15px 0px 0px 0px !important;
+    padding: 15x 0px !important;
+
+}
 
 .dropdown-menu {
   position: absolute;
@@ -243,7 +285,7 @@ header {
   opacity: 0;
   visibility: hidden;
   flex-direction: column;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   border-radius: 12px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   border-top: 4px solid var(--primary-color);
@@ -251,6 +293,7 @@ header {
   transform: translateY(15px);
   z-index: 1001;
   color: var(--black-color);
+  
 }
 
 .dropdown-menu::before {
@@ -294,7 +337,8 @@ header {
 }
 
 .dropdown-menu li a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+  background: transparent !important;
   padding-left: 30px;
   margin: 0;
 }
@@ -309,25 +353,26 @@ header {
   margin-left: 18px;
   color: var(--black-color);
 }
+
 .cart-icon {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .cart-count {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: #ffcc00; 
-    color: #000;
-    font-size: 12px;
-    font-weight: 600;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-icons-mobile {
@@ -443,8 +488,11 @@ header.scrolled {
 .icons a i {
   font-size: 24px;
   margin: 0 2px;
+  transition: all .4s ease;
 }
-
+.icons a i:hover {
+    color: var(--primary-color);
+}
 .slide-content {
   position: absolute;
   left: 15%;
@@ -488,10 +536,11 @@ header .image {
 .image-svg svg {
   height: 80px;
   width: 100%;
-  transition: all .4s ;
+  transition: all .4s;
 }
+
 .image-svg svg:hover {
-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 
@@ -519,22 +568,25 @@ transform: translateY(-8px);
   padding: 24px 10px 9px 0px;
   align-items: center;
 }
-.card-sec .cards .money-card:hover{
+
+.card-sec .cards .money-card:hover {
   border: 1px solid var(--primary-color);
 }
+
 .card-sec .card-body h5 {
   margin-top: 6px;
 }
-  .cards::-webkit-scrollbar {
-    height: 6px;
-    background: rgba(0, 0, 0, 0.12);
-    border-radius: 6px;
-  }
 
-  .cards::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.20);
-    border-radius: 6px;
-  }
+.cards::-webkit-scrollbar {
+  height: 6px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.20);
+  border-radius: 6px;
+}
 
 /* card-end */
 
@@ -715,9 +767,10 @@ transform: translateY(-8px);
   font-size: 15px;
   color: var(--black-color);
 }
+
 .product-content .icons a:hover {
-    background: var(--primary-color);
-  }
+  background: var(--primary-color);
+}
 
 /* slider-product */
 .slick-arrow {
@@ -864,7 +917,7 @@ transform: translateY(-8px);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-bottom: 80px ;
+  padding-bottom: 80px;
 }
 
 .testimonials-card {
@@ -913,12 +966,12 @@ transform: translateY(-8px);
 
 .blog-content-img .content a {
   color: var(--black-color);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
 }
 
-.blog-content-img .content h3 {
-  font-size: 18px;
+.blog-content-img .content h3 a {
+  font-size: 15px;
   font-weight: 700;
   font-family: 'Nunito';
 }
@@ -955,9 +1008,9 @@ transform: translateY(-8px);
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--border-gray);
   padding: 70px 0px;
 }
+
 .logos-sec .image img {
   display: inline-block;
 }
@@ -1015,12 +1068,12 @@ transform: translateY(-8px);
   background: var(--primary-color);
   color: var(--black-color);
   /* border: 1px solid var(--black-color); */
-} 
+}
 
 /* footer */
 
 footer {
-  padding-bottom: 70px ;
+  padding-bottom: 70px;
 }
 
 .fo-2 .footer-logo img {
@@ -1062,6 +1115,7 @@ footer {
 .footer-links ul li {
   list-style: none;
   margin: 6px 0px 0px 0px;
+  width: max-content;
 }
 
 .footer-links ul {
@@ -1077,12 +1131,6 @@ footer {
   font-weight: 500;
   font-size: 15px;
 }
-
-.footer-links ul li a:hover {
-  text-decoration: underline;
-  color: var(--black-color);
-}
-
 .footer-links h3 {
   color: var(--black-color);
   font-size: 18px;
@@ -1102,7 +1150,10 @@ footer {
 .footer-contact .contact-link {
   margin-top: 25px;
 }
-
+.footer-contact .contact-links h4 a {
+    color: var(--text-color);
+    font-size: 15px;
+}
 .contact-link h4 {
   font-size: 18px;
   font-family: 'Nunito';
@@ -1114,18 +1165,19 @@ footer {
   margin-top: 50px;
 }
 
-.footer-bottom-copy p {
-  text-align: center;
-  font-size: 14px;
-  color: var(--text-color);
-  font-weight: 500;
-  margin: 0;
+
+.footer-bottom .col-lg-4:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
+
+
+
 .footer-icons {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 13px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 13px;
 }
 
 .footer-bottom-copy span a {
@@ -1142,14 +1194,9 @@ footer {
   display: flex;
   justify-content: flex-start;
   gap: 22px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
+  margin: 12px 0px 0px 0px;
 }
-
-.footer-contact .contact-links h4:hover {
-  text-decoration: underline;
-  color: var(--black-color);
-}
-
 .footer-contact .contact-links h4 {
   font-size: 15px;
   font-family: nunito;
@@ -1209,5 +1256,3 @@ footer {
   max-width: 100%;
   height: auto;
 }
-
-

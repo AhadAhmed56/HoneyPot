@@ -919,7 +919,7 @@
 
   .swiper-pagination-bullet-active,
   .slick-dots li.slick-active button {
-    width: 30px;
+    width: 36px;
     border-radius: 10px;
     background: var(--primary-color);
   }
@@ -944,7 +944,6 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    
     margin-bottom: -20px;
     padding-bottom: 20px;
   }
@@ -1125,6 +1124,10 @@
     padding: 25px 0 0px 0px;
   }
 
+    .Banner-sec .swiper-button-next, .Banner-sec .swiper-button-prev {
+        display: none !important;
+    }
+
   .logo img {
     max-width: 110px;
   }
@@ -1159,9 +1162,7 @@
   }
 
   .card-sec .money-card {
-    min-width: 250px;
-    width: 250px;
-    scroll-snap-align: center;
+    min-width: 418px;
   }
 
   .sales .cotent-image {
@@ -1311,4 +1312,8 @@
     height: 200px;
     object-fit: cover;
   }
+  .swiper-pagination-horizontal {
+    position: absolute;
+    top: 370px;
+}
 }
