@@ -416,13 +416,35 @@
   .our-porduct {
     height: auto;
     padding-bottom: 60px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .our-porduct .col-lg-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .our-product-content-1,
   .our-product-content-2,
   .our-product-content-3,
   .our-product-content-4 {
-    margin: 40px auto 0;
+    margin: 20px auto 0;
+    max-width: 340px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 16px;
+    padding: 24px 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+  }
+
+  .our-product-content .content h3 {
+    font-size: 16px;
+  }
+
+  .our-product-content .content p {
+    font-size: 13px;
   }
 
   .about-content {
@@ -983,14 +1005,37 @@
   /* our-product section mobile reset */
   .our-porduct {
     height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .our-porduct .col-lg-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .our-product-content-1,
   .our-product-content-2,
   .our-product-content-3,
   .our-product-content-4 {
-    margin: 40px auto 0;
+    margin: 16px auto 0;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.93);
+    border-radius: 14px;
+    padding: 22px 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+  }
+
+  .our-product-content .content h3 {
+    font-size: 15px;
+  }
+
+  .our-product-content .content p {
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   /* About section mobile reset */
@@ -1121,7 +1166,7 @@
 /* Adjust for Small Mobile (up to 575px) */
 @media only screen and (min-width: 100px) and (max-width: 575px) {
   .sec-padding {
-    padding: 25px 0 0px 0px;
+    padding: 25px  0px;
   }
 
     .Banner-sec .swiper-button-next, .Banner-sec .swiper-button-prev {
@@ -1162,7 +1207,8 @@
   }
 
   .card-sec .money-card {
-    min-width: 418px;
+    min-width: 240px;
+    width: 240px;
   }
 
   .sales .cotent-image {
@@ -1245,7 +1291,9 @@
   .our-product-content-2,
   .our-product-content-3,
   .our-product-content-4 {
-    margin: 20px auto 10;
+    margin: 14px auto 0;
+    max-width: 300px;
+    padding: 20px 14px;
   }
 
   .slick-dots {
@@ -1315,5 +1363,241 @@
   .swiper-pagination-horizontal {
     position: absolute;
     top: 370px;
-}
+  }
+
+  /* Product grid: 2 columns on small mobile when not slick */
+  .product .col-lg-3 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 6px;
+  }
+
+  .product-content {
+    margin: 0 0 12px;
+  }
+
+  .product-content .content a h4 {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .product-content .content h5 {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .product-content .btn-main {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  /* About section full width on small mobile */
+  .about .col-lg-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .about-content {
+    padding: 15px 10px;
+  }
+
+  .about-content .content .web-title h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .about-content .l-r-content {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .about-content .btn-black {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  /* Footer columns stack on small mobile */
+  footer .col-lg-4,
+  footer .col-lg-2,
+  footer .col-lg-3 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .fo-2 {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer-links {
+    margin-bottom: 25px;
+  }
+
+  .footer-contact {
+    margin-bottom: 25px;
+  }
+
+  .footer-bottom .col-lg-4 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom .col-lg-4:last-child {
+    justify-content: center;
+  }
+
+  .end-icons ul {
+    justify-content: center;
+  }
+
+  .footer-bottom-copy {
+    text-align: center;
+  }
+
+  .iamge-footer-end {
+    text-align: center;
+  }
+
+  /* Testimonials on small mobile */
+  .testimonials-card {
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+    margin: 8px 4px 0;
+  }
+
+  .testimonials-card .image {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+
+  .testimonials-card .content h3 {
+    font-size: 15px;
+  }
+
+  .testimonials-card .content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Blog section on small mobile */
+  .blog .col-md-6,
+  .blog .col-lg-4 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Contact section on small mobile */
+  .contact-box h3 {
+    font-size: 22px;
+  }
+
+  .contact-box p {
+    font-size: 14px;
+  }
+
+  /* Sales section small mobile */
+  .sales .col-md-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Accordion section columns */
+  .accordion-sec .col-lg-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Simple card section */
+  .simple-card .card-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Counter section */
+  .counter-sec .col-lg-3,
+  .counter-sec .col-md-6 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .counter h2 {
+    font-size: 26px;
+  }
+
+  .counter p {
+    font-size: 14px;
+  }
+  .testimonials-card {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    margin: 10px 5px 0;
+  }
+
+  /* Logos section */
+  .logos-sec .image img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  /* General overflow prevention */
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container-fluid,
+  .container {
+    overflow-x: hidden;
+  }
+
+  /* Banner about page */
+  .Banner-sec-about {
+    height: 200px;
+  }
+
+  .breadcrumb-about h4 {
+    font-size: 22px;
+  }
+
+  /* Tabs section */
+  .tabsec .nav-tabs {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .tabsec .nav-link {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .tab-content {
+    padding: 15px;
+  }
+
+  .tab-content p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
 }
