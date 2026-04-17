@@ -1,9 +1,18 @@
-/* Broad responsiveness (up to 1399px) */
 @media only screen and (min-width: 100px) and (max-width: 1399px) {
   header {
     max-width: 100%;
     width: 100%;
     padding: 20px 0;
+  }
+  .logo img {
+    width: 180px;
+  }
+  .navBar ul {
+    gap: 20px;
+  }
+  .slide-content h3 {
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -66,21 +75,21 @@
   }
 
   .our-product-content-1 {
-    margin: 85px 60px 0 0;
+    margin: 74px 424px 0 0;
   }
 
   .our-product-content-2 {
-    margin: 85px 0 0 60px;
+    margin: 63px 0 0 600px;
   }
 
   .our-product-content-3 {
-    margin: 40px 60px 0 0;
+    margin: 40px 424px 0 0px;
   }
 
   .our-product-content-4 {
-    margin: 40px 0 0 60px;
+    margin: 37px 0 0 600px;
   }
-
+/* 
   header {
     position: absolute;
     top: 0;
@@ -126,18 +135,9 @@
     transform: translateX(0);
   }
 
-  .mobile-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #000;
-    cursor: pointer;
-    flex-shrink: 0;
-  }
-
+  .header-icons-mobile {
+  display: none;
+}
   .logo {
     text-align: center;
     flex-grow: 1;
@@ -278,7 +278,21 @@
   .close-menu:hover {
     background: var(--primary-color);
     color: var(--black-color);
+  } */
+
+  .our-product-content .our-product-content-1 {
+    margin: 85px 60px 0 0;
   }
+  .our-product-content .our-product-content-2 {
+    margin: 85px 0 0 60px;
+  }
+  .our-product-content .our-product-content-3 {
+    margin: 40px 60px 0 0;
+  }
+  .our-product-content .our-product-content-4 {
+    margin: 40px 0 0 60px;
+  }
+
 
   .menu-overlay {
     position: fixed;
@@ -293,16 +307,24 @@
   .menu-overlay.active {
     display: block;
   }
-
+.about .image img {
+    display: inline-block;
+    border-radius: 8px;
+    height: 397px;
+    object-fit: contain;
+}
+.about-content .content {
+    margin: 0px 0px 19px 0px;
+}
   .slide-content {
-    left: 5%;
-    top: 45%;
+    left: 10%;
+    top: 50%;
     transform: translateY(-50%);
     text-align: left;
   }
 
   .slide-content h3 {
-    font-size: 32px;
+    font-size: 50px;
     line-height: 1.2;
     margin-bottom: 15px;
   }
@@ -313,7 +335,7 @@
   }
 
   .Content-img img {
-    height: 600px;
+    height: 800px;
     width: 100%;
     object-fit: cover;
   }
@@ -408,7 +430,7 @@
 
   .card-sec .money-card {
     min-width: 260px;
-    width: 307px;
+    width: 300px;
     flex-shrink: 0;
     scroll-snap-align: center;
     padding: 20px 16px 16px;
@@ -429,7 +451,7 @@
 
   .web-title h2 {
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
   }
 
 
@@ -445,7 +467,7 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-
+/* 
   .our-product-content-1,
   .our-product-content-2,
   .our-product-content-3,
@@ -457,7 +479,7 @@
     padding: 24px 18px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6px);
-  }
+  } */
 
   .our-product-content .content h3 {
     font-size: 16px;
@@ -473,8 +495,8 @@
 
   .about-content .l-r-content {
     flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 25px;
+    gap: 9px;
+    margin-bottom: 10px;
   }
 
   .about-content .l-r-content .l-content {
@@ -609,6 +631,14 @@
     top: 30%;
   }
 
+  .sec-padding {
+    padding: 40px 0 0px 0px;
+  }
+
+  section.product {
+    padding-bottom: 20px;
+  }
+
   .slide-content h4 {
     font-size: 32px;
     margin-bottom: 10px;
@@ -649,10 +679,6 @@
 
   .our-product-content-3 {
     margin: 40px 60px 0 0;
-  }
-
-  .our-product-content-4 {
-    margin: 40px 0 0 60px;
   }
 
   header {
@@ -873,13 +899,13 @@
 
   .slide-content {
     left: 5%;
-    top: 45%;
+    top: 50%;
     transform: translateY(-50%);
     text-align: left;
   }
 
   .slide-content h3 {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 1.2;
     margin-bottom: 15px;
   }
@@ -907,8 +933,7 @@
 
   .slick-dots {
     list-style: none;
-    margin: 24px;
-   
+    margin: 24px 0px 0px 0px;
   }
 
   .grid-main {
@@ -986,7 +1011,7 @@
     display: none !important;
   }
 
-  
+
   .card-sec {
     overflow: hidden;
   }
@@ -1005,7 +1030,22 @@
     padding-bottom: 20px;
   }
 
+.about .col-lg-6{
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.about .image {
 
+  width: 100%;
+
+}
+.about .image img {
+        display: inline-block;
+        border-radius: 8px;
+        height: 397px;
+        object-fit: contain;
+    }
   .card-sec .cards::-webkit-scrollbar,
   .card-sec .cards::-webkit-scrollbar-track,
   .card-sec .cards::-webkit-scrollbar-thumb {
@@ -1018,7 +1058,7 @@
 
   .card-sec .money-card {
     min-width: 260px;
-    width: 351px;
+    width: 339px;
     flex-shrink: 0;
     scroll-snap-align: center;
     padding: 20px 16px 16px;
@@ -1051,19 +1091,18 @@
     max-width: 100%;
   }
 
-  .our-product-content-1,
-  .our-product-content-2,
-  .our-product-content-3,
-  .our-product-content-4 {
-    margin: 16px auto 0;
-    max-width: 320px;
-    background: rgba(255, 255, 255, 0.93);
-    border-radius: 14px;
-    padding: 22px 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
+  .our-product-content-1{
+    margin: 85px 60px 0 0;
   }
-
+  .our-product-content-2{
+    margin: 85px 0 0 60px;
+  }
+  .our-product-content-3{
+    margin: 40px 60px 0 0;
+  }
+  .our-product-content-4{
+    margin: 40px 0 0 60px;
+  }
   .our-product-content .content h3 {
     font-size: 15px;
   }
@@ -1088,16 +1127,18 @@
     width: 100%;
   }
 
-.image img {
+  .image img {
     display: inline-block;
     border-radius: 8px;
     width: 100%;
-}
+  }
+
   .testimonials-card {
     flex-direction: column;
     padding: 30px 20px;
     text-align: center;
     margin: 0px 5px 0;
+    border-radius: 16px;
   }
 
   .testimonials-card .image {
@@ -1114,10 +1155,6 @@
     line-height: 1.6;
   }
 
-  /* Logos mobile layout */
-  .logos-sec {
-    padding: 40px 0;
-  }
 
   .logos-sec .image {
     text-align: center;
@@ -1164,6 +1201,15 @@
     font-size: 11px;
   }
 
+  section.contact {
+    padding: 40px 0px;
+  }
+
+  .contact-box p {
+    font-size: 16px;
+    color: #666;
+  }
+
   .header-icon img {
     display: none;
   }
@@ -1195,29 +1241,37 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
   .footer-bottom .col-lg-4:last-child {
     display: flex;
     justify-content: flex-start;
-}
+  }
 
   img.img-heg {
     height: 300px;
     object-fit: cover;
   }
-  .logos-sec .image img{
-  width: 150px;
+
+  .logos-sec .image img {
+    width: 125px;
   }
+  .btn-black{
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight:bold;
+}
 }
 
 /* Adjust for Small Mobile (up to 575px) */
 @media only screen and (min-width: 100px) and (max-width: 575px) {
   .sec-padding {
-    padding: 25px  0px;
+    padding: 25px 0px;
   }
 
-    .Banner-sec .swiper-button-next, .Banner-sec .swiper-button-prev {
-        display: none !important;
-    }
+  .Banner-sec .swiper-button-next,
+  .Banner-sec .swiper-button-prev {
+    display: none !important;
+  }
 
   .logo img {
     max-width: 110px;
@@ -1233,6 +1287,7 @@
 
   .slide-content {
     left: 4%;
+    top: 51%;
   }
 
   .slide-content h3 {
@@ -1254,7 +1309,7 @@
 
   .card-sec .money-card {
     min-width: 240px;
-    width: 411px;
+    width: 353px;
   }
 
   .sales .cotent-image {
@@ -1284,6 +1339,10 @@
   /* Contact section mobile layout */
   .contact-box {
     padding: 0 15px;
+  }
+
+  section.product {
+    padding-bottom: 30px;
   }
 
   .contact-box h3 {
@@ -1407,6 +1466,7 @@
     height: 200px;
     object-fit: cover;
   }
+
   .swiper-pagination-horizontal {
     position: absolute;
     top: 370px;
@@ -1448,7 +1508,9 @@
 
   .about .image img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 100%;
   }
 
   .about-content {
@@ -1592,6 +1654,7 @@
   .counter p {
     font-size: 14px;
   }
+
   .testimonials-card {
     flex-direction: column;
     padding: 30px 20px;
@@ -1647,10 +1710,25 @@
     font-size: 13px;
     line-height: 1.6;
   }
-  .logos-sec .image img{
+
+  .logos-sec .image img {
     max-width: 100px;
   }
+
   .slick-track {
     margin: 15px 0px;
+  }
+
+  section.contact {
+    padding: 40px 0px;
+  }
+  .contact-box p {
+    font-size: 16px;
+    color: #666;
+}
+.btn-black{
+    padding: 12px 20px;
+    font-size: 10px;
+    font-weight:bold;
 }
 }

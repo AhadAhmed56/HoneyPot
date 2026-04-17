@@ -846,19 +846,19 @@ header .image {
 }
 
 .our-product-content-1 {
-  margin: 85px 159px 0px 0px;
+  margin: 50px 58px 0px 0px;
 }
 
 .our-product-content-2 {
-  margin: 109px 0px 0px 214px;
+  margin: 50px 0px 0px 138px;
 }
 
 .our-product-content-3 {
-  margin: 90px 363px 0px 0px;
+  margin: 46px 312px 0px 0px;
 }
 
 .our-product-content-4 {
-  margin: 93px 0px 0px 412px;
+  margin: 66px 0px 0px 290px;
 }
 
 /* about */
@@ -891,6 +891,7 @@ header .image {
 
 .l-r-content .l-content h3 {
   font-size: 18px;
+  margin: 0;
   font-weight: 700;
 }
 
@@ -898,6 +899,7 @@ header .image {
   color: var(--muted-text);
   font-size: 15px;
   font-weight: 500;
+  margin: 0;
 }
 
 
@@ -1158,6 +1160,12 @@ footer {
   font-weight: 500;
   font-size: 15px;
 }
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+  color: var(--black-color);
+}
+
 .footer-links h3 {
   color: var(--black-color);
   font-size: 18px;
@@ -1177,10 +1185,7 @@ footer {
 .footer-contact .contact-link {
   margin-top: 25px;
 }
-.footer-contact .contact-links h4 a {
-    color: var(--text-color);
-    font-size: 15px;
-}
+
 .contact-link h4 {
   font-size: 18px;
   font-family: 'Nunito';
@@ -1192,13 +1197,13 @@ footer {
   margin-top: 50px;
 }
 
-
-.footer-bottom .col-lg-4:last-child {
-  display: flex;
-  justify-content: flex-end;
+.footer-bottom-copy p {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin: 0;
 }
-
-
 
 .footer-icons {
   display: flex;
@@ -1221,9 +1226,14 @@ footer {
   display: flex;
   justify-content: flex-start;
   gap: 22px;
-  /* margin-bottom: 12px; */
-  margin: 12px 0px 0px 0px;
+  margin-bottom: 12px;
 }
+
+.footer-contact .contact-links h4:hover {
+  text-decoration: underline;
+  color: var(--black-color);
+}
+
 .footer-contact .contact-links h4 {
   font-size: 15px;
   font-family: nunito;
