@@ -147,7 +147,7 @@
         </section>
         <!-- card-sec-start -->
         <section class="card-sec sec-padding">
-            <div class="container gx-0">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class=" text-center web-title">
@@ -288,7 +288,7 @@
         <!-- card-sec-end -->
         <!-- sales-sec-start -->
         <section class="sales sec-padding">
-            <div class="container gx-0">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-6 col-lg-6 mb-2 mb-md-0">
                         <div class="cotent-image">
@@ -640,7 +640,7 @@
         <!-- our-product-end -->
         <!-- about-start -->
         <section class="about sec-padding">
-            <div class="container gx-0">
+            <div class="container ">
                 <div class="row gx-0">
                     <div class="col-lg-6 gx-0 mb-4 mb-lg-0">
                         <div class="image">
@@ -680,7 +680,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-center web-title mb-4">
+                        <div class="text-center web-title">
                             <h4>New Arrivals</h4>
                             <h2>Latest Products</h2>
                         </div>
@@ -906,7 +906,7 @@
         <section class="Testimonials sec-padding">
             <div class="container">
                 <div class="row">
-                    <div class="text-center web-title mb-4">
+                    <div class="text-center web-title ">
                         <h4>Our Testimonials</h4>
                         <h2>Our Client's Feedback</h2>
                     </div>
@@ -1348,7 +1348,7 @@
         });
 
         $('.res-testimonials').slick({
-            dots: false,
+            dots: true,
             infinite: false,
             speed: 300,
             slidesToShow: 2,
@@ -1434,7 +1434,7 @@
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
                         arrows: false,
                         dots: true
@@ -1446,6 +1446,7 @@
         $('.mobile-toggle').on('click', function () {
             $('.navBar-container').addClass('active');
             $('.menu-overlay').addClass('active');
+            $('.nav-item.dropdown').removeClass('active'); // Close all dropdowns when opening menu
         });
 
         $('.close-menu, .menu-overlay').on('click', function () {
@@ -1457,6 +1458,7 @@
         $('.nav-item.dropdown > a').on('click', function (e) {
             if ($(window).width() <= 1024) {
                 e.preventDefault();
+                e.stopPropagation();
 
                 var parent = $(this).parent();
 

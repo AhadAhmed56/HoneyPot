@@ -77,7 +77,10 @@ li {
   list-style: none;
   display: inline-block;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 button {
   border: none;
   cursor: pointer;
@@ -222,17 +225,9 @@ header {
   overflow: visible;
 }
 
-.navBar ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
 
-.navBar ul li {
-  list-style: none;
-  display: inline-block;
-}
+
+
 
 .navBar ul li a {
   padding: 6px 22px;
@@ -249,9 +244,9 @@ header {
   align-items: center;
   gap: 10px;
 }
-
 .navBar ul li {
   list-style: none;
+  display: inline-block;
   position: relative;
 }
 
@@ -341,11 +336,6 @@ header {
   background: transparent !important;
   padding-left: 30px;
   margin: 0;
-}
-
-.navBar ul li a:hover,
-.navBar ul li a.active {
-  background-color: var(--primary-color);
 }
 
 .icons a {
@@ -835,7 +825,7 @@ header .image {
   border-radius: 50%;
   height: 90px;
   width: 90px;
-  line-height: 90p;
+  line-height: 90px;
   margin-right: 10px;
 }
 
@@ -953,6 +943,43 @@ header .image {
   color: var(--black-color);
   font-size: 18px;
   font-weight: 700;
+}
+
+/* Testimonials Slick Dots */
+.Testimonials .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  gap: 8px;
+}
+
+.Testimonials .slick-dots li {
+  margin: 0;
+}
+
+.Testimonials .slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.Testimonials .slick-dots li button:hover {
+  background-color: var(--white-color);
+}
+
+.Testimonials .slick-dots li.slick-active button {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  transform: scale(1.2);
 }
 
 

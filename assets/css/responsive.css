@@ -178,9 +178,14 @@
     font-size: 20px;
   }
 
+  .navBar {
+    width: 100%;
+    display: block;
+  }
+
   .navBar ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 5px;
     margin-top: 60px;
     padding: 0;
@@ -224,16 +229,31 @@
   }
 
   .dropdown.active>.dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: static !important;
+  }
+
+  .dropdown:not(.active):hover>.dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .dropdown:not(.active):hover .fa-chevron-down {
+    transform: rotate(0deg) !important;
   }
 
   .nav-item.dropdown .fa-chevron-down {
     transition: transform 0.3s ease;
   }
 
-  .dropdown.active>a .fa-chevron-do .header-icons-desktop {
+  .dropdown.active>a .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+
+  .header-icons-desktop {
     display: none;
   }
 
@@ -351,7 +371,7 @@
 
   .Banner-sec .swiper-button-next,
   .Banner-sec .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
 
   .card-sec {
@@ -388,7 +408,7 @@
 
   .card-sec .money-card {
     min-width: 260px;
-    width: 260px;
+    width: 307px;
     flex-shrink: 0;
     scroll-snap-align: center;
     padding: 20px 16px 16px;
@@ -466,7 +486,7 @@
     flex-direction: column;
     padding: 30px 20px;
     text-align: center;
-    margin: 10px 5px 0;
+    margin: 0px 5px 0;
   }
 
   .testimonials-card .image {
@@ -731,9 +751,14 @@
   }
 
   /* Nav list in sidebar */
+  .navBar {
+    width: 100%;
+    display: block;
+  }
+
   .navBar ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 5px;
     margin-top: 60px;
     padding: 0;
@@ -780,9 +805,20 @@
   }
 
   .dropdown.active>.dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: static !important;
+  }
+
+  .dropdown:not(.active):hover>.dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .dropdown:not(.active):hover .fa-chevron-down {
+    transform: rotate(0deg) !important;
   }
 
   .nav-item.dropdown .fa-chevron-down {
@@ -798,7 +834,6 @@
     display: none;
   }
 
-  /* Close Button inside sidebar */
   .close-menu {
     position: absolute;
     top: 15px;
@@ -948,7 +983,7 @@
 
   .Banner-sec .swiper-button-next,
   .Banner-sec .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
 
   
@@ -983,7 +1018,7 @@
 
   .card-sec .money-card {
     min-width: 260px;
-    width: 260px;
+    width: 351px;
     flex-shrink: 0;
     scroll-snap-align: center;
     padding: 20px 16px 16px;
@@ -1053,12 +1088,16 @@
     width: 100%;
   }
 
-
+.image img {
+    display: inline-block;
+    border-radius: 8px;
+    width: 100%;
+}
   .testimonials-card {
     flex-direction: column;
     padding: 30px 20px;
     text-align: center;
-    margin: 10px 5px 0;
+    margin: 0px 5px 0;
   }
 
   .testimonials-card .image {
@@ -1137,7 +1176,7 @@
   }
 
   .end-icons ul {
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
   }
 
@@ -1156,10 +1195,17 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  .footer-bottom .col-lg-4:last-child {
+    display: flex;
+    justify-content: flex-start;
+}
 
   img.img-heg {
     height: 300px;
     object-fit: cover;
+  }
+  .logos-sec .image img{
+  width: 150px;
   }
 }
 
@@ -1208,7 +1254,7 @@
 
   .card-sec .money-card {
     min-width: 240px;
-    width: 240px;
+    width: 411px;
   }
 
   .sales .cotent-image {
@@ -1311,6 +1357,7 @@
 
   .footer-bottom {
     margin: 0;
+    padding: 30px 0px 10px 0px;
   }
 
   .contact-form {
@@ -1459,7 +1506,7 @@
   }
 
   .end-icons ul {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .footer-bottom-copy {
@@ -1549,7 +1596,7 @@
     flex-direction: column;
     padding: 30px 20px;
     text-align: center;
-    margin: 10px 5px 0;
+    margin: 0px 5px 0;
   }
 
   /* Logos section */
@@ -1600,4 +1647,10 @@
     font-size: 13px;
     line-height: 1.6;
   }
+  .logos-sec .image img{
+    max-width: 100px;
+  }
+  .slick-track {
+    margin: 15px 0px;
+}
 }
