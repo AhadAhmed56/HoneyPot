@@ -817,6 +817,12 @@
     width: 100%;
   }
 
+  .dropdown:hover .dropdown-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
   .dropdown-menu li {
     padding: 0;
   }
@@ -1341,7 +1347,7 @@
     padding: 0 15px;
   }
 
-  section.product {
+.product {
     padding-bottom: 30px;
   }
 
