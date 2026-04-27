@@ -303,7 +303,10 @@
     background: rgba(0, 0, 0, 0.45);
     display: none;
   }
-
+.image-content .image img {
+    height: 340px;
+    object-fit: cover;
+}
   .menu-overlay.active {
     display: block;
   }
@@ -1052,7 +1055,7 @@
         display: inline-block;
         border-radius: 8px;
         height: 397px;
-        object-fit: contain;
+        object-fit: cover;
     }
   .card-sec .cards::-webkit-scrollbar,
   .card-sec .cards::-webkit-scrollbar-track,
@@ -1079,7 +1082,12 @@
     line-height: 1.5;
     padding-top: 10px;
   }
-
+.faqs-content {
+    margin: 20px 0px;
+}
+    .image-content .image img {
+width: 100%;
+    }
   .web-title h2 {
     font-size: 26px;
     margin-bottom: 30px;
@@ -1265,7 +1273,7 @@
   }
 
   .logos-sec .image img {
-    width: 125px;
+    width: 116px;
   }
   .btn-black{
     padding: 12px 20px;
@@ -1578,7 +1586,10 @@
   .footer-bottom .col-lg-4:last-child {
     justify-content: center;
   }
-
+.image-content .image img {
+        height: 217px;
+        object-fit: cover;
+    }
   .end-icons ul {
     justify-content: space-evenly;
   }

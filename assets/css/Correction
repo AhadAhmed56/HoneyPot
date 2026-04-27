@@ -17,3 +17,32 @@
 5. section ki spacing ki class bana lena ek hee >> X
 6. 
 https://bluevisionroofing.com
+
+menu ko dynamic kese kr tey hai wordpress mai 
+sab se phle hum  theme file editor mai  function .php  mai menu ko register kr tey hai 
+ ye register ka functino hai 
+
+<?php
+
+function mytheme_register_nav_menu(){
+	register_nav_menus( array(
+		'header_menu' => __( 'Header Menu', 'text_domain' ), -> is mai humne header ko e menu ko dynamic kia hai  ke kia hai  header_menu id  hai  
+		'footer_quick' => __( 'Footer Quick', 'text_domain' ),
+		'footers_account' => __('Footer Account', 'text_domain')
+	) );
+}
+add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
+?>
+
+ab next step ya ha ke wordpress ke sidebar mai  ("Appearance") hai  is ma menu aye gha hum phirmenu pr click karey  gy , tu create new menu aye gha  ismai  Menu Name field mai hum apne Menu ka name lekhe gy , or (Menu Setting ) mai hamra menu araha hu gha hum apne menu ko check karey gy  phir hum create krey gy , 
+
+Menu  Sturcture  ay gha us mai hama page araaha hy hu gy apne page ko check karey gy or  Add to Menu button pr click karey   wo     Menu Suructre mai ayr gha phir save akrey gy 
+ phir hum  apne page mai header ya footer.php mai 
+  	<?php
+							 wp_nav_menu( array(
+									'theme_location' => 'footers_account',
+								) );
+							?>
+
+                            ya add kr dy gy nav ke ander ul ko remove kar krey ya navber ke ander  pastekarey gy
+
