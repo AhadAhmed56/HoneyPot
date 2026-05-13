@@ -46,3 +46,21 @@ Menu  Sturcture  ay gha us mai hama page araaha hy hu gy apne page ko check kare
 
                             ya add kr dy gy nav ke ander ul ko remove kar krey ya navber ke ander  pastekarey gywp-content
 
+contact dynamic  
+form ko dynamic krna ke liye ju plugins use hu tha hai wo hai Contact From 7  form ko create krtey ha wah ase  code mil tah hai  
+  or page mai form ko  hatha kr  ye function ko use krtey hai do_shotcut  
+  <!-- RIGHT : CONTACT FORM -->
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <h3><?php echo $contact_form_sec['form_title']; ?></h3>
+                    <p><?php echo $contact_form_sec['form_desc']; ?></p>
+
+                    <?php echo do_shortcode('[contact-form-7 id="a17aca1" title="Contact form 1"]'); ?>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+	is trah   
