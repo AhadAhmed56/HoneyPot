@@ -64,3 +64,124 @@ form ko dynamic krna ke liye ju plugins use hu tha hai wo hai Contact From 7  fo
 
 
 	is trah   
+
+
+    aj kal professional secure setup:
+
+HTTPS
+Argon2
+HttpOnly cookies
+CSRF token
+Rate limiting
+Turnstile/reCAPTCHA
+2FA
+Generic errors
+Security heade
+
+
+ye dekhna ha
+
+
+
+post type  flow
+
+sab se  Appearance mai  theme file editor mai http://localhost/honeypot/wp-admin/theme-editor.php ye link hu gha , phir hm theme function paage mai aye gy us mai hum post ko register kareyg gy 
+ regidterka ye code hu tha hai 
+ for example hum servive post type bana raha huia 
+
+function services()
+{
+    $labels = array(
+        'name' => _x('Services', 'post type general name'),
+        'singular_name' => _x('Services', 'post type singular name'),
+        'add_new' => _x('Add New', 'Services'),
+        'add_new_item' => __('Add New Services'),
+        'edit_item' => __('Edit Services'),
+        'new_item' => __('New Services'),
+        'view_item' => __('View Services'),
+        'search_items' => __('Search Services'),
+        'not_found' => __('Nothing found'),
+        'not_found_in_trash' => __('Nothing found in Trash'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'menu_icon' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title','thumbnail','editor','excerpt')
+    );
+    register_post_type('services', $args);
+}
+add_action('init', 'services');
+
+  register_post_type('services', $args);  is function se post register hu ti hai 
+
+  add_action is methood se hum  wo lekhtey hai jis name se hum ko post dekhi hu ti hierarchical
+    post create hu gai hai 
+    ab ab side mai wo post agai hu ti hai  us click karey gy phir post banay gy 
+
+
+
+<section class="blog sec-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="center web-title mb-4">
+                            <h4 class="text-center">From The Blog</h4>
+                            <h2 class="text-center">Our Latest Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+					
+					<?php 
+						$loop = new WP_Query( array( 
+							'post_type' => 'services', 
+							'posts_per_page' => 3,  
+							'order' => 'ASC'
+						) ); 
+					?>
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                        <div class="blog-content-img">
+                            <div class="image">
+                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="">
+                            </div>
+                            <div class="content">
+                                <a href="#" class="text-dark"><?php echo get_the_date(); ?> . by <?php echo get_the_author(); ?></a>
+                                <h5 class="fw-bold"><?php echo the_title(); ?></h5>
+                                <?php echo the_excerpt(); ?>
+                                <a href="<?php echo get_the_permalink(); ?>" class="btn-main">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+					
+					<?php endwhile; wp_reset_query(); ?>
+					
+                </div>
+            </div>
+        </section>
+is mai hum ne apni post ko add kia hai  ju hm ne waha add ki ti 
+<?php 
+						$loop = new WP_Query( array( 
+							'post_type' => 'services', -> yaha ap ki post ka name atha hai
+							'posts_per_page' => 3, ye banati hai kitni post show krni hia   
+							'order' => 'ASC' is ka matlab hu  post asseding show hu 
+						) ); 
+					?>
+					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					is loop bnatey hai  is function ko boltey hai custom postype loop 
+
+                    ye psot bana gai hai  ab krna hai jab hum service mai read more pr click kr tu k signal page aye, us ko banatey hai agar lovccal hai tu  file explore se ban  gay gha agar site live hai tu file manager plugin hu tha is ko install krna ke bana hai acah file  ka single-post name .php huna chiye  jab hi ap ki spost  mai click krne se single page banaye gh a17aca1
+
+                    acha ab krna hai ke  ht post pr click krney se hr pot ka alag data aye is ko krna ke liye AFC  mai jab new field banatey hai 
+
+                    last mai psot type select karey gy is equal to post name  is se hr post ka data  alag alag h gha
